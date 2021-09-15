@@ -31,6 +31,16 @@ who are curious about home schooling, self isolating or looking for ideas to kee
 * To allow the user to create memories of activities done with their child.
 * To have a reliable data storage system for both information on activities and memories uploaded by the user.
 
+### **User Requirements and Expectations**
+
+#### Requirements
+
+* A simple and easy way to navigate the website.
+* An easy to understand dashboard with simple controls.
+* Quick upload button to add to the memory album for later access.
+* Easy way for admin to use CRUD functions for instructions or album.
+* Ability to delete profile or album.
+
 ## Wireframes
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane 
