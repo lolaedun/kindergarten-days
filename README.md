@@ -122,3 +122,13 @@ childs_name     | String
 activity_date   | String
 activity_image  | String
 other_notes     | String
+
+## **Technologies used**
+
+
+### **Languages**
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://www.python.org/)
