@@ -131,11 +131,25 @@ other_notes     | String
 * [HTML](https://en.wikipedia.org/wiki/HTML)
 * [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-* [Python](https://www.python.org/)
+* [Python](https://www.python.org/) 
 
 ### **Libraries and Frameworks**
 
-* [Font Awesome](https://fontawesome.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Google Fonts](https://fonts.google.com/)
-* [jQuery](https://jquery.com/)
+- [Font Awesome](https://fontawesome.com/) to provide icons for the website.
+- [Bootstrap](https://getbootstrap.com/) to simplify the structure of the website and make the website responsive easily.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+- [jQuery](https://jquery.com/) JavaScript library.
+
+### **Tools**
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
+- [GitPod](https://www.gitpod.io/) as my chosen IDE
+- [GitHub](https://github.com/) to store and share all project code remotely.
+- [Heroku](https://www.heroku.com/) to deploy my website
+- [Balsamiq](https://balsamiq.com/) to create the wireframes for this project.
+* [W3C HTML Validation Service](https://validator.w3.org/) to validate HTML code
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate CSS code
+- [Am I Responsive](http://ami.responsivedesign.is/) to create the website mockups
+- [MongoDB Atlas](https://www.mongodb.com/) for database storage
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) to support extensions in adding functionality to the website
+* [PyMongo](https://docs.mongodb.com/drivers/pymongo/) to work with MongoDB from Python.
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) templating language for Python.
