@@ -33,13 +33,22 @@ who are curious about home schooling, self isolating or looking for ideas to kee
 
 ### **User Requirements and Expectations**
 
-#### Requirements
+#### **Requirements**
 
 * A simple and easy way to navigate the website.
 * An easy to understand dashboard with simple controls.
 * Quick upload button to add to the memory album for later access.
 * Easy way for admin to use CRUD functions for instructions or album.
 * Ability to delete profile or album.
+
+#### **Expectations**
+
+* Easy to show completed activities.
+* Easy to upload photos to memory album.
+* Easy to download memory album of activities.
+* Easy to see activities for the week on the dashboard
+* Simple profile with information about child and memory album.
+
 
 ## Wireframes
 
