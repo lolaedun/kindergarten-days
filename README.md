@@ -52,7 +52,10 @@ who are curious about home schooling, self isolating or looking for ideas to kee
 
 ### **Design Choices**
 ### Colours Mood board and Mockups
-I have used [ColourLovers](https://www.colourlovers.com/palettes) to find inspiration for my colour palette and scheme. I went for bright colours and font pairings that work well on education based websites.
+I have used [ColourLovers](https://www.colourlovers.com/palettes) to find inspiration for my colour palette and scheme. I went for bright colours and 
+
+##### FONT PAIRINGS
+  **Montserrat** and **Crimson**  are the two fonts that I have chosen and seem to work well on education based websites.
 
 
 
