@@ -1,7 +1,19 @@
-## My Kindy Days
+## Kindergarten Days
 
-Welcome to my waldorf steinar inspired webpage for kindergarten children. Full of seasonal activities to provide inspiration for parents
-who are curious about home schooling.
+Welcome to a waldorf steinar inspired webpage for kindergarten children (ages 3-6). Full of seasonal activities to provide inspiration for parents
+who are curious about home schooling, self isolating or looking for ideas to keep little ones engaged in learning and playing.
+
+## **UX**
+
+### **User Goals**
+
+* The website has to work well on all kind of devices like mobile phones, tables and desktops.
+* The website has to be fun and interactive.
+* Visually appealing website.
+* User should be able to easily create a profile.
+* User can easily search for an seasonal activity based on date entered.
+* User can save completed activities for the next login.
+* User has an easy to understand dashboard that shows activities for the week with a completion icon to select/deselect as well as a progress bar.
 
 ## Wireframes
 
