@@ -49,4 +49,4 @@ You can find my wireframes below:
 ### [Desktop Wireframe : Activity Page](wireframes/9.Activity-Page-Desktop.png)
 
 
-
+For a pdf version of all the wireframes you can access them here:  [WireFrame PDF](wireframes/Activity-wireframes.pdf)
