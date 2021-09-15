@@ -25,6 +25,12 @@ who are curious about home schooling, self isolating or looking for ideas to kee
 * As a user, I would like to upload photos of our completed activities to create a digital album for the year.
 * As a user, I would like to print my week of activities and or digital album.
 
+### **Site Owner Goals**
+* To have a website that can easily create, read, update and delete activites and user profiles.
+* To create a website that is personable and allows the user to feel empowered and involved in their childs learning and education.
+* To allow the user to create memories of activities done with their child.
+* To have a reliable data storage system for both information on activities and memories uploaded by the user.
+
 ## Wireframes
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane 
