@@ -87,3 +87,38 @@ You can find my wireframes below:
 
 
 For a pdf version of all the wireframes you can access them here:  [WireFrame PDF](wireframes/Activity-wireframes.pdf)
+
+### **Database Structure**
+
+I have used MongoDB to set up the database for this project with the following collections: 
+
+#### **Users:**
+
+Key      | Value
+---------|-----------
+_id      | ObjectId
+username | String
+password | String
+
+#### **Activites:**
+
+Key               | Value
+--------------------|-----------
+_id                 | ObjectId
+theme               | String
+craft               | String
+book                | String
+circle_game         | String
+handwork            | String
+completed_activity  | Boolean
+
+
+#### **Memory Album:**
+
+Key             | Value
+----------------|-----------
+_id             | ObjectId
+childs_name     | String
+activity_date   | String
+activity_image  | String
+other_notes     | String
