@@ -15,6 +15,16 @@ who are curious about home schooling, self isolating or looking for ideas to kee
 * User can save completed activities for the next login.
 * User has an easy to understand dashboard that shows activities for the week with a completion icon to select/deselect as well as a progress bar.
 
+### **User Stories**
+
+* As a user, I would like to search for seasonal activites.
+* As a user, I would like to have a simple and easy to understand dashboard of my weekly activities.
+* As a user, I would like to save my completed activites.
+* As a user, I would like to view activities yet to be completed.
+* As a user, I would like to be able to have access to activities regardless of the device i'm using.
+* As a user, I would like to upload photos of our completed activities to create a digital album for the year.
+* As a user, I would like to print my week of activities and or digital album.
+
 ## Wireframes
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane 
