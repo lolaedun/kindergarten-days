@@ -50,6 +50,15 @@ who are curious about home schooling, self isolating or looking for ideas to kee
 * Simple profile with information about child and memory album.
 
 
+### **Design Choices**
+### Colours Mood board and Mockups
+I have used [ColourLovers](https://www.colourlovers.com/palettes) to find inspiration for my colour palette and scheme. I went for bright colours and font pairings that work well on education based websites.
+
+
+
+
+![Colours](wireframes/Kindergarten-colour-theme.png)
+
 ## Wireframes
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane 
