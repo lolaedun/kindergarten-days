@@ -100,30 +100,41 @@ _id      | ObjectId
 username | String
 password | String
 
+#### **Themes:**
+
+Key               | Value
+--------------------|-----------
+_id                 | ObjectId
+name                | String
+letter_of_week      | String
+craft               | Whatever
+book                | String
+circle_game         | Whatever
+handwork            | Whatever
+week_number         | Integer   
+
+
+#### **Whatever:**
+Key               | Value
+--------------------|-----------
+_id                 | ObjectId
+name                | String
+instructions        | String
+type                | String
+
+
+
 #### **Activites:**
 
 Key               | Value
 --------------------|-----------
 _id                 | ObjectId
-theme               | String
-letter_of_week      | String
-craft               | String
-book                | String
-circle_game         | String
-handwork            | String
-is_completed        | String
+theme               | Themes
+is_completed        | Boolean
 date_range          | String    
 
 
-#### **Memory Album:**
 
-Key             | Value
-----------------|-----------
-_id             | ObjectId
-childs_name     | String
-activity_date   | String
-activity_image  | String
-other_notes     | String
 
 ## **Technologies used**
 
