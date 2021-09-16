@@ -106,6 +106,7 @@ Key               | Value
 --------------------|-----------
 _id                 | ObjectId
 theme               | String
+letter_of_week      | String
 craft               | String
 book                | String
 circle_game         | String
