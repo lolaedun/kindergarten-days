@@ -176,8 +176,8 @@ To clone the project:
     pip3 install -r requirements.txt
 
 1. Sign-in or sign-up to [MongoDB](https://www.mongodb.com/) and create a new cluster
-    * Within the Sandbox, click the collections button and after click Create Database (Add My Own Data) called (enter name here)
-    * Set up the following collections: users, activities, memory album [Click here to see the exact Database Structure](#database-structure)
+    * Within the Sandbox, click the collections button and after click Create Database (Add My Own Data) called kindergarten_days
+    * Set up the following collections: users, activities, memory_album [Click here to see the exact Database Structure](#database-structure)
 
     * Under the Security Menu on the left, select Database Access.
     * Add a new database user, and keep the credentials secure
