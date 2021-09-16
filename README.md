@@ -110,7 +110,8 @@ craft               | String
 book                | String
 circle_game         | String
 handwork            | String
-completed_activity  | Boolean
+is_completed        | String
+date_range          | String    
 
 
 #### **Memory Album:**
