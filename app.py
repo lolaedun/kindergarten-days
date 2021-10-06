@@ -28,7 +28,8 @@ def get_activities():
 
 @app.route("/add_activity")
 def add_activity():
-    return render_template("add_activity.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add_activity.html", categories=categories)
 
 
 
