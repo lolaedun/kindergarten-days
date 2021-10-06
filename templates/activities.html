@@ -1,27 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
-    
-    {% for activity in activities %}
-        {{ activity.month }}<br>
-        {{ activity.theme }}<br>
-        {{ activity.letter_of_week }}<br>
-        {{ activity.book}}<br>
-        {{ activity.book_description}}<br>
-        {{ activity.craft }}<br>
-        {{ activity.circle_game }}<br>
-        {{ activity.handwork }}<br>
-        {{ activity.is_completed }}<br>
-    {% endfor %}
 
-    <div class="accordion" id="accordionExample">
+    <div class="accordion" id="category_name">
         {% for activity in activities %}
         <h2>{{ activity.month }} - {{ activity.theme }}</h2> 
         <strong>Letter of the Week </strong> : {{ activity.letter_of_week }}
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
-              class="accordion-button bg-secondary"
+              class="accordion-button collapsed bg-secondary"
               type="button"
               data-mdb-toggle="collapse"
               data-mdb-target="#collapseOne"
@@ -40,12 +28,43 @@
           </h2>
           <div
             id="collapseOne"
-            class="accordion-collapse collapse show"
+            class="accordion-collapse collapse"
             aria-labelledby="headingOne"
             data-mdb-parent="#accordionExample"
           >
                 <div class="accordion-body">
                     {{ activity.book_description}}
+                </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed bg-warning"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+            >
+            <strong>Craft of the Week </strong>: {{ activity.craft }}
+            {% if activity.is_completed == "on" %}
+                <i class="fas fa-check-circle text-danger"
+                data-mdb-toggle="tooltip" 
+                data-mdb-placement="right"
+                title="You have completed this task!">
+                </i>
+            {% endif %}
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-mdb-parent="#accordionExample"
+          >
+                <div class="accordion-body">
+                    {{ activity.craft_description}}
                 </div>
           </div>
         </div>
