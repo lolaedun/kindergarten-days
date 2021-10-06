@@ -102,7 +102,7 @@ password | String
 
 #### **Themes:**
 
-Key               | Value
+Key                 | Value
 --------------------|-----------
 _id                 | ObjectId
 name                | String
@@ -115,7 +115,7 @@ week_number         | Integer
 
 
 #### **Whatever:**
-Key               | Value
+Key                 | Value
 --------------------|-----------
 _id                 | ObjectId
 name                | String
@@ -126,7 +126,7 @@ type                | String
 
 #### **Activites:**
 
-Key               | Value
+Key                 | Value
 --------------------|-----------
 _id                 | ObjectId
 theme               | Themes
