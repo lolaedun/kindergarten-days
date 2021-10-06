@@ -16,7 +16,8 @@
 
     <div class="accordion" id="accordionExample">
         {% for activity in activities %}
-        <h2>{{ activity.month }} : {{ activity.theme }}</h2> 
+        <h2>{{ activity.month }} - {{ activity.theme }}</h2> 
+        <strong>Letter of the Week </strong> : {{ activity.letter_of_week }}
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button

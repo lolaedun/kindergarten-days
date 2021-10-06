@@ -26,6 +26,12 @@ def get_activities():
     return render_template("activities.html", activities=activities)
 
 
+@app.route("/add_activity")
+def add_activity():
+    return render_template("add_activity.html")
+
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
