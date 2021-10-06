@@ -62,6 +62,13 @@ I have used [ColourLovers](https://www.colourlovers.com/palettes) to find inspir
 
 ![Colours](wireframes/Kindergarten-colour-theme.png)
 
+##### LOGO
+I have created a simple and colourful logo to represent the purpose of the website using Canva. I have also used the chosen fonts of **Montserrat** and **Crimson** to create the logo and keep the consistency of fonts used throughout the site.
+
+![Logo](static/images/kindergarten-logo.jpg)
+
+
+  
 ## Wireframes
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane 
