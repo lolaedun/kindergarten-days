@@ -26,8 +26,26 @@ def get_activities():
     return render_template("activities.html", activities=activities)
 
 
-@app.route("/add_activity")
+@app.route("/add_activity", methods=["GET", "POST"])
 def add_activity():
+    if request.method == "POST":
+        activity = {
+            "month": request.form.getlist("month"),
+            "theme": request.form.get("theme"),
+            "letter_of_week": request.form.get("letter_of_week"),
+            "book": request.form.get("book"),
+            "book_description": request.form.get("book_description"),
+            "craft": request.form.get("craft"),
+            "craft_description": request.form.get("craft_description"),
+            "game": request.form.get("game"),
+            "game_description": request.form.get("game_description"),
+            "watercolour": request.form.get("watercolour"),
+            "watercolour_description": request.form.get("watercolour_description")
+            
+        }
+        mongo.db.activities.insert_one(activity)
+        flash("Activity Successfully Added")
+        return redirect(url_for("get_activities"))
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_activity.html", categories=categories)
 
