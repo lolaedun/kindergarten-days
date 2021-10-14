@@ -26,7 +26,7 @@ def get_activities():
 def add_activity():
     if request.method == "POST":
         activity = {
-            "month": request.form.get("month"),
+            "month": request.values.get("month"),
             "theme": request.form.get("theme"),
             "letter_of_week": request.form.get("letter-of-week"),
             "book": request.form.get("book"),
