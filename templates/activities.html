@@ -4,54 +4,26 @@
 
     <div class="accordion" id="category_name">
         {% for activity in activities %}
-        <h2>{{ activity.month }} - {{ activity.theme }}</h2> 
-        <strong>Letter of the Week </strong> : {{ activity.letter_of_week }}
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button collapsed story"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-            <strong>Story of the Week </strong>: {{ activity.book }}
-            {% if activity.is_completed == "on" %}
-                <i class="fas fa-check-circle text-danger"
-                data-mdb-toggle="tooltip" 
-                data-mdb-placement="right"
-                title="You have completed this task!">
-                </i>
-            {% endif %}
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingOne"
-            data-mdb-parent="#accordionExample"
-          >
-                <div class="accordion-body">
-                    {{ activity.book_description}}
-                </div>
-          </div>
+        
+          {% include 'components/accordion.html' %}
+            
+          
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button
               class="accordion-button collapsed craft"
               type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#collapseTwo"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
               aria-expanded="true"
               aria-controls="collapseTwo"
             >
             <strong>Craft of the Week </strong>: {{ activity.craft }}
             {% if activity.is_completed == "on" %}
                 <i class="fas fa-check-circle text-danger"
-                data-mdb-toggle="tooltip" 
-                data-mdb-placement="right"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right"
                 title="You have completed this task!">
                 </i>
             {% endif %}
@@ -61,7 +33,7 @@
             id="collapseTwo"
             class="accordion-collapse collapse"
             aria-labelledby="headingTwo"
-            data-mdb-parent="#accordionExample"
+            data-bs-parent="#accordionExample"
           >
                 <div class="accordion-body">
                     {{ activity.craft_description}}
@@ -73,16 +45,16 @@
             <button
               class="accordion-button collapsed watercolour"
               type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#collapseThree"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
               aria-expanded="false"
               aria-controls="collapseThree"
             >
             <strong>Watercolour of the Week </strong>: {{ activity.watercolour }}
             {% if activity.is_completed == "on" %}
                 <i class="fas fa-check-circle text-danger"
-                data-mdb-toggle="tooltip" 
-                data-mdb-placement="right"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right"
                 title="You have completed this task!">
                 </i>
             {% endif %}
@@ -92,7 +64,7 @@
             id="collapseThree"
             class="accordion-collapse collapse"
             aria-labelledby="headingThree"
-            data-mdb-parent="#accordionExample"
+            data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
               {{ activity.watercolour_description}}
@@ -105,16 +77,16 @@
             <button
               class="accordion-button collapsed game"
               type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#collapseFour"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
               aria-expanded="false"
               aria-controls="collapseFour"
             >
             <strong>Game of the Week </strong>: {{ activity.game }}
             {% if activity.is_completed == "on" %}
                 <i class="fas fa-check-circle text-danger"
-                data-mdb-toggle="tooltip" 
-                data-mdb-placement="right"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right"
                 title="You have completed this task!">
                 </i>
             {% endif %}
@@ -124,7 +96,7 @@
             id="collapseFour"
             class="accordion-collapse collapse"
             aria-labelledby="headingFour"
-            data-mdb-parent="#accordionExample"
+            data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
               {{ activity.game_description}}

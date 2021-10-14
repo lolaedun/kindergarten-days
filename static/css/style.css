@@ -2,18 +2,23 @@
      background-color: #b82cb9; 
 } 
 
-.story {
+
+.story, .story:not(.collapsed) {
      background-color: #ff4f9a;
+     color: black;
 }
 
-.craft {
+.craft, .craft:not(.collapsed) {
      background-color: #f6b647;
+     color: black;
 }
 
-.watercolour {
+.watercolour, .watercolour:not(.collapsed) {
      background-color: #6cce3b;
+     color: black;
 }
 
-.game {
+.game, .game:not(.collapsed) {
      background-color: #38b2ff;
+     color: black;
 }

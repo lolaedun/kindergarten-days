@@ -1,0 +1,22 @@
+<h2>{{ activity.month }} - {{ activity.theme }}</h2>
+<strong>Letter of the Week </strong> : Letter {{ activity.letter_of_week }}
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+
+        <button class="accordion-button collapsed story" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <strong>Story of the Week </strong>: {{ activity.book }}
+            {% if activity.is_completed == "on" %}
+            <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="You have completed this task!">
+            </i>
+            {% endif %}
+        </button>
+       
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            {{ activity.book_description}}
+        </div>
+    </div>
