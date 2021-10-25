@@ -4,6 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -19,7 +20,17 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def get_activities():
-    activities = list(mongo.db.activities.find())
+    now = datetime.now()
+    activities = list(mongo.db.activities.find({'month': now.strftime('%B')}))
+    print(activities)
+    return render_template("activities.html", activities=activities)
+
+
+@app.route("/filter", methods=["GET", "POST"])
+def filter_activities():
+    month = request.form.get('month')
+    activities = list(mongo.db.activities.find({'month': month}))
+    print(activities)
     return render_template("activities.html", activities=activities)
 
 
