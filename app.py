@@ -4,6 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
@@ -21,6 +22,10 @@ def get_activities():
     activities = list(mongo.db.activities.find())
     return render_template("activities.html", activities=activities)
 
+
+@app.route("/register/user", methods=["GET", "POST"])
+def register():
+    return render_template("pages/register-user.html")
 
 @app.route("/add/activity", methods=["GET", "POST"])
 def add_activity():
