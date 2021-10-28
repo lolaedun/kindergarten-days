@@ -1,111 +1,116 @@
-<form method="POST" action="{{ url_for('add_activity') }}">
-    <!-- Month Select -->
-    <div class="form-outline mb-4">
+<div class="card">
+    <div class="card-body">
 
-        <select class="select" id="month" name="month">
-            <option>January</option>
-            <option>February</option>
-            <option>March</option>
-            <option>April</option>
-            <option>May</option>
-            <option>June</option>
-            <option>July</option>
-            <option>August</option>
-            <option>September</option>
-            <option>October</option>
-            <option>November</option>
-            <option>December</option>
-        </select>
-
-        <label class="form-label" for="month">Month name</label>
-    </div>
-
-
-    <!-- Text inputs for the Theme and Letter of the Week -->
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="theme" name="theme" class="form-control" required />
-                <label class="form-label" for="theme">Week : Theme Name</label>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="letter-of-week" name="letter-of-week" class="form-control" />
-                <label class="form-label" for="letter-of-week">Letter of the Week</label>
-            </div>
-        </div>
-    </div>
-
-    <!-- Text inputs for the Book Name and Description -->
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="book" name="book" class="form-control" required />
-                <label class="form-label" for="book">Book Name </label>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="book_description" name="book_description" class="form-control" />
-                <label class="form-label" for="book_description">Book Description</label>
-            </div>
-        </div>
-    </div>
-
-    <!-- Text inputs for the Craft and Description -->
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="craft" name="craft" class="form-control" required />
-                <label class="form-label" for="craft">Craft Name </label>
-            </div>
-        </div>
-        <div class="col">
+        <form method="POST" action="{{ url_for('add_activity') }}">
+            <!-- Month Select -->
             <div class="form-outline mb-4">
-                <textarea class="form-control" id="craft_description" name="craft_description" rows="4"></textarea>
-                <label class="form-label" for="craft_description">Craft Description</label>
+
+                <select class="select" id="month" name="month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+                <label class="form-label" for="month">Month name</label>
             </div>
-        </div>
+
+
+            <!-- Text inputs for the Theme and Letter of the Week -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="theme" name="theme" class="form-control" required />
+                        <label class="form-label" for="theme">Week : Theme Name</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="letter-of-week" name="letter-of-week" class="form-control" />
+                        <label class="form-label" for="letter-of-week">Letter of the Week</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text inputs for the Book Name and Description -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="book" name="book" class="form-control" required />
+                        <label class="form-label" for="book">Book Name </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="book_description" name="book_description" class="form-control" />
+                        <label class="form-label" for="book_description">Book Description</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text inputs for the Craft and Description -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="craft" name="craft" class="form-control" required />
+                        <label class="form-label" for="craft">Craft Name </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="craft_description" name="craft_description" rows="4"></textarea>
+                        <label class="form-label" for="craft_description">Craft Description</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text inputs for the Watercolour and Description -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="watercolour" name="watercolour" class="form-control" required />
+                        <label class="form-label" for="watercolour">Watercolour Title <label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="watercolour_description" name="watercolour_description"
+                            rows="4"></textarea>
+                        <label class="form-label" for="watercolour_description
+                    ">Watercolour Story Description</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text inputs for the Games and Description -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="game" name="game" class="form-control" required />
+                        <label class="form-label" for="game">Game Name </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="game_description" name="game_description" rows="4"></textarea>
+                        <label class="form-label" for="game_description
+                    ">Game Description</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Save Activity</button>
+        </form>
     </div>
-
-    <!-- Text inputs for the Watercolour and Description -->
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="watercolour" name="watercolour" class="form-control" required />
-                <label class="form-label" for="watercolour">Watercolour Title <label>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-outline mb-4">
-                <textarea class="form-control" id="watercolour_description" name="watercolour_description"
-                    rows="4"></textarea>
-                <label class="form-label" for="watercolour_description
-               ">Watercolour Story Description</label>
-            </div>
-        </div>
-    </div>
-
-    <!-- Text inputs for the Games and Description -->
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="game" name="game" class="form-control" required />
-                <label class="form-label" for="game">Game Name </label>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-outline mb-4">
-                <textarea class="form-control" id="game_description" name="game_description" rows="4"></textarea>
-                <label class="form-label" for="game_description
-               ">Game Description</label>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Save Activity</button>
-</form>
+</div>
