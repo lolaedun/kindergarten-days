@@ -2,6 +2,9 @@
      background-color: #b82cb9; 
 } 
 
+.space {
+     padding-top: 5em;
+}
 
 .story, .story:not(.collapsed) {
      background-color: #ff4f9a;
