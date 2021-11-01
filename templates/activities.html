@@ -7,17 +7,25 @@
   {% include 'components/accordion.html' %}
 </div>
 <div class="accordion-item">
+  
   <h2 class="accordion-header" id="headingOne">
+    
     <button class="accordion-button collapsed story" type="button" data-bs-toggle="collapse"
       data-bs-target="#id_book_{{ activity._id }}" aria-expanded="true" aria-controls="#id_book_{{ activity._id }}">
-      <strong>Story of the Week </strong>: {{ activity.book }}
+      <strong>Story of the Week </strong>: {{ activity.book }} 
       {% if activity.is_completed == "on" %}
       <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
         title="You have completed this task!">
       </i>
       {% endif %}
+      <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        EDIT
+      </a>
+      <input type="checkbox" name="box"/> DONE
+    
     </button>
   </h2>
+  
   <div id="id_book_{{ activity._id }}"class="accordion-collapse collapse" aria-labelledby="headingOne"
     data-bs-parent="#accordionExample">
     <div class="accordion-body">
