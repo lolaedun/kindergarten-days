@@ -18,7 +18,7 @@
         title="You have completed this task!">
       </i>
       {% endif %}
-      <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      <a class="btn btn-outline-dark" data-toggle="collapse" href="{{ url_for('edit_activity', activity_id=activity._id) }}" role="button" aria-expanded="false" aria-controls="collapseExample">
         EDIT
       </a>
       <input type="checkbox" name="box"/> DONE
@@ -89,7 +89,7 @@
         title="You have completed this task!">
       </i>
       {% endif %}
-      <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      <a class="btn btn-outline-dark" data-toggle="collapse" href="{{ url_for('edit_activity', activity_id=activity._id) }}" role="button" aria-expanded="false" aria-controls="collapseExample">
         EDIT
       </a>
       <input type="checkbox" name="box"/> DONE

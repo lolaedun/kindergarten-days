@@ -124,6 +124,14 @@ def add_activity():
     return render_template("pages/add-activity.html", categories=categories)
 
 
+@app.route("/edit_activity/<activity_id>", methods=["GET", "POST"])
+def edit_activity(activity_id):
+    activity = mongo.db.activities.find_one({"_id": ObjectId(activity_id)})
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("pages/edit-activity.html", activity=activity, categories=categories)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
