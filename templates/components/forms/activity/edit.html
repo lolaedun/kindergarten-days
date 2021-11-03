@@ -28,13 +28,15 @@
             <div class="row mb-4">
                 <div class="col">
                     <div class="form-outline">
-                        <input type="text" id="theme" name="theme" class="form-control" required />
+                        <input type="text" id="theme" name="theme" value="{{ activity.theme }}" class="form-control"
+                            required />
                         <label class="form-label" for="theme">Week : Theme Name</label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-outline">
-                        <input type="text" id="letter-of-week" name="letter-of-week" class="form-control" />
+                        <input type="text" id="letter_of_week" name="letter_of_week"
+                            value="{{ activity.letter_of_week }}" class="form-control" />
                         <label class="form-label" for="letter-of-week">Letter of the Week</label>
                     </div>
                 </div>
@@ -44,13 +46,15 @@
             <div class="row mb-4">
                 <div class="col">
                     <div class="form-outline">
-                        <input type="text" id="book" name="book" class="form-control" required />
+                        <input type="text" id="book" name="book" value="{{ activity.book }}" class="form-control"
+                            required />
                         <label class="form-label" for="book">Book Name </label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-outline">
-                        <input type="text" id="book_description" name="book_description" class="form-control" />
+                        <input type="text" id="book_description" name="book_description"
+                            value="{{ activity.book_description }}" class="form-control" />
                         <label class="form-label" for="book_description">Book Description</label>
                     </div>
                 </div>
@@ -60,14 +64,15 @@
             <div class="row mb-4">
                 <div class="col">
                     <div class="form-outline">
-                        <input type="text" id="craft" name="craft" class="form-control" required />
+                        <input type="text" id="craft" name="craft" value="{{ activity.craft }}" class="form-control"
+                            required />
                         <label class="form-label" for="craft">Craft Name </label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-outline mb-4">
-                        <textarea class="form-control" id="craft_description" name="craft_description"
-                            rows="4"></textarea>
+                        <textarea class="form-control" id="craft_description" name="craft_description" rows="4">{{- activity.craft_description -}}
+                        </textarea>
                         <label class="form-label" for="craft_description">Craft Description</label>
                     </div>
                 </div>
@@ -77,14 +82,17 @@
             <div class="row mb-4">
                 <div class="col">
                     <div class="form-outline">
-                        <input type="text" id="watercolour" name="watercolour" class="form-control" required />
+                        <input type="text" id="watercolour" name="watercolour" value="{{ activity.watercolour }}"
+                            class="form-control" required />
                         <label class="form-label" for="watercolour">Watercolour Title <label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-outline mb-4">
                         <textarea class="form-control" id="watercolour_description" name="watercolour_description"
-                            rows="4"></textarea>
+                            rows="4">
+                        {{- activity.watercolour_description -}}
+                        </textarea>
                         <label class="form-label" for="watercolour_description
                     ">Watercolour Story Description</label>
                     </div>
@@ -95,14 +103,16 @@
             <div class="row mb-4">
                 <div class="col">
                     <div class="form-outline">
-                        <input type="text" id="game" name="game" class="form-control" required />
+                        <input type="text" id="game" name="game" value="{{ activity.game }}" class="form-control"
+                            required />
                         <label class="form-label" for="game">Game Name </label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-outline mb-4">
-                        <textarea class="form-control" id="game_description" name="game_description"
-                            rows="4"></textarea>
+                        <textarea class="form-control" id="game_description" name="game_description" rows="4">
+                        {{- activity.game_description -}}
+                        </textarea>
                         <label class="form-label" for="game_description
                     ">Game Description</label>
                     </div>
