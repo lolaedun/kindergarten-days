@@ -1,9 +1,17 @@
+.activity-title{
+     margin-left: 1rem;
+     margin-top: 1rem;
+}
+
 
 .btn{
      margin-left: 5rem;
-     margin-right: 1rem;
+     
 }
 
+input[type="checkbox"] {
+     margin-left: 5em;
+ }
 
 .navbar {
      background-color: #b82cb9; 

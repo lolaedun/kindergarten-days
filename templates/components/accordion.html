@@ -1,8 +1,10 @@
-<h2>{{ activity.month }} - {{ activity.theme }}</h2>
-<strong>Letter of the Week </strong> : Letter {{ activity.letter_of_week }}
+<h2 class="activity-title">{{ activity.month }} - {{ activity.theme }}</h2>
+<p class="activity-title"><strong>Letter of the Week </strong> : Letter {{ activity.letter_of_week }}
 {% if session.user == 'admin' %}
     <a class="btn btn-outline-dark" data-toggle="collapse" href="{{ url_for('edit_activity', activity_id=activity._id) }}" role="button" aria-expanded="false" aria-controls="collapseExample">
     EDIT
     </a>
+{% else %}
     <input type="checkbox" name="box"/> DONE
 {% endif %}
+</p>
