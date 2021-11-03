@@ -126,8 +126,23 @@ def add_activity():
 
 @app.route("/edit/activity/<activity_id>", methods=["GET", "POST"])
 def edit_activity(activity_id):
+    if request.method == "POST":
+        submit = {
+            "month": request.values.get("month"),
+            "theme": request.form.get("theme"),
+            "letter_of_week": request.form.get("letter-of-week"),
+            "book": request.form.get("book"),
+            "book_description": request.form.get("book_description"),
+            "craft": request.form.get("craft"),
+            "craft_description": request.form.get("craft_description"),
+            "game": request.form.get("game"),
+            "game_description": request.form.get("game_description"),
+            "watercolour": request.form.get("watercolour"),
+            "watercolour_description": request.form.get("watercolour_description")          
+        }
+        mongo.db.activities.update({"_id": ObjectId(activity_id)}, submit)
+        flash("Activity Successfully Updated")
     activity = mongo.db.activities.find_one({"_id": ObjectId(activity_id)})
-    print("ACTIVITY: ", activity)
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("pages/edit-activity.html", activity=activity, categories=categories)
 
