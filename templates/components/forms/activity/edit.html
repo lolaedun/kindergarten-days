@@ -6,18 +6,14 @@
             <div class="form-outline mb-4">
 
                 <select class="select" id="month" name="month">
-                    <option>January</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
-                    <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                    <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option>
-                    <option>December</option>
+                    {% for month in ['January','February','March','April','May','June','July','August','September','October','November','December'] %}
+                        {% if activity.month == month %}
+                        <option selected value="{{ month }}">{{ month }}</option>
+                        {% else %}
+                        <option value="{{ month }}">{{ month }}</option>
+                        {% endif %}
+
+                    {% endfor %}
                 </select>
 
                 <label class="form-label" for="month">Month name</label>
