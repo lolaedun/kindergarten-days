@@ -1,22 +1,21 @@
+input[type="checkbox"] {
+     margin-left: 5em;
+ }
+
+
 .activity-title{
      margin-left: 1rem;
      margin-top: 1rem;
 }
 
-
-.btn{
-     margin-left: 5rem;
-     
-}
-
-input[type="checkbox"] {
-     margin-left: 5em;
- }
-
 .navbar {
      background-color: #b82cb9; 
 } 
 
+.btn-outline-dark {
+
+     margin-left: 5rem;
+ }
 .space {
      padding-top: 3em;
 }

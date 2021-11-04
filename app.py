@@ -151,6 +151,13 @@ def edit_activity(activity_id):
     return render_template("pages/edit-activity.html", activity=activity, categories=categories)
 
 
+@app.route("/delete/<activity_id>")
+def delete_activity(activity_id):
+    mongo.db.activities.remove({"_id": ObjectId(activity_id)})
+    flash("Activity Successfully Deleted")
+    return redirect(url_for("get_activities"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
