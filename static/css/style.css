@@ -10,7 +10,11 @@ input[type="checkbox"] {
 .slider {
      padding-top: 10rem;
  }
-.activity-title{
+
+.bg-dark {
+     --bs-bg-opacity: .3;
+}
+.activity-title {
      margin-left: 1rem;
      margin-top: 1rem;
 }
