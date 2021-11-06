@@ -7,6 +7,9 @@ input[type="checkbox"] {
      height: 100vh;
      background-size: cover;
 }
+.slider {
+     padding-top: 10rem;
+ }
 .activity-title{
      margin-left: 1rem;
      margin-top: 1rem;
