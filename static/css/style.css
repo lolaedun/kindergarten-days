@@ -2,10 +2,18 @@ input[type="checkbox"] {
      margin-left: 5em;
  }
 
+button.btn.game {
+     margin-top: 1rem;
+ }
+
 .jumbotron{
      background-image: url(../images/waldorf-kindergarten-home.png);
      height: 100vh;
      background-size: cover;
+}
+
+.jumbotron-register{
+     background-image: url(../images/waldorf-register.png);
 }
 .slider {
      padding-top: 10rem;
@@ -17,6 +25,16 @@ input[type="checkbox"] {
 .activity-title {
      margin-left: 1rem;
      margin-top: 1rem;
+}
+
+.card {
+     
+     background-color: transparent;
+     
+}
+
+.form-size {
+     max-width: 600px;
 }
 
 .navbar {
