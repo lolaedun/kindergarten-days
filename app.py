@@ -20,9 +20,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
-
 @app.route("/")
+def home():
+
+    return render_template("pages/home.html")
+
+@app.route("/activities")
 def get_activities():
     now = datetime.now()
     activities = list(mongo.db.activities.find({'month': now.strftime('%B')}))
