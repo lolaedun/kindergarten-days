@@ -19,6 +19,11 @@ button.btn.game, button.btn.watercolour {
 .jumbotron-login{
      background-image: url(../images/waldorf-login.png);
 }
+
+.jumbotron-bg2{
+     background-image: url(../images/bg2.png);
+     
+}
 .slider {
      padding-top: 10rem;
  }
