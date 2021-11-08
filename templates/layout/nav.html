@@ -1,63 +1,56 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-2 mt-lg-0" href="{{url_for('home')}}">
-          <img
-            src="/static/images/kindergarten-logo.png"
-            
-            alt="kindergarten logo"
-            loading="lazy"
-          />
-        </a>
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('home')}}">Home</a>
-          </li>
-          {% if session.user %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('profile', username=session['user'])}}">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('get_activities')}}">Activities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('add_activity')}}">Add Activity</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('login')}}">Log In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('register')}}">Register</a>
-          </li>
-          {% endif %}
-          
-        </ul>
-        
-      </div>
+  <!-- Navbar logo -->
+  <a class="navbar-brand mt-2 mt-lg-0" href="{{url_for('home')}}">
+    <img
+      src="/static/images/kindergarten-logo.png"
       
-    </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navbar -->
+      alt="kindergarten logo"
+      loading="lazy"
+    />
+  </a>
+  <!-- Toggle button -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Collapsible wrapper -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Left links -->
+    <ul class="navbar-nav mr-auto text-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('home')}}">Home</a>
+      </li>
+      {% if session.user %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('profile', username=session['user'])}}">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('get_activities')}}">Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('add_activity')}}">Add Activity</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('login')}}">Log In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('register')}}">Register</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+      
+</nav>
