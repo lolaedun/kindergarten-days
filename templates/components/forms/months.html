@@ -1,6 +1,6 @@
 <div class="text-center space">
     <form method="POST" action="{{ url_for('filter_activities') }}">
-        <div class="form-outline mb-4">
+        <div class="form-outline mx-auto">
             <label class="form-label" for="month">Choose month : </label>
             <select class="select" id="month" name="month">
                 <option>Select....</option>
@@ -16,10 +16,8 @@
                 <option>October</option>
                 <option>November</option>
                 <option>December</option>
-            </select>
-
-            
+            </select>   
+            <button type="submit" class="btn game">Go!</button> 
         </div>
-        <button type="submit">Submit</button>
     </form>
 </div>

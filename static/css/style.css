@@ -11,9 +11,9 @@ input[type="checkbox"] {
      margin-left: 5em;
  }
 
-button.btn.game, button.btn.watercolour {
+/* button.btn.game, button.btn.watercolour {
      margin-top: 1rem;
- }
+ } */
 
 .jumbotron{
      background-image: url(../images/waldorf-kindergarten-home.png);
