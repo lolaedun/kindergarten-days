@@ -122,8 +122,7 @@ def add_activity():
             "game": request.form.get("game"),
             "game_description": request.form.get("game_description"),
             "watercolour": request.form.get("watercolour"),
-            "watercolour_description": request.form.get("watercolour_description") 
-               
+            "watercolour_description": request.form.get("watercolour_description")   
         }
         mongo.db.activities.insert_one(activity)
         flash("Activity Successfully Added")
@@ -146,7 +145,7 @@ def edit_activity(activity_id):
             "game": request.form.get("game"),
             "game_description": request.form.get("game_description"),
             "watercolour": request.form.get("watercolour"),
-            "watercolour_description": request.form.get("watercolour_description")     
+            "watercolour_description": request.form.get("watercolour_description")
         }
         mongo.db.activities.update({"_id": ObjectId(activity_id)}, submit)
         flash("Activity Successfully Updated")
