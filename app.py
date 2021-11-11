@@ -148,7 +148,7 @@ def edit_activity(activity_id):
             "watercolour_description": request.form.get("watercolour_description")
         }
         mongo.db.activities.update({"_id": ObjectId(activity_id)}, submit)
-        flash("Activity Successfully Updated")
+        flash("{} Activity Successfully Updated".format(request.form.get("theme")))
         return redirect(url_for("get_activities"))
     activity = mongo.db.activities.find_one({"_id": ObjectId(activity_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
