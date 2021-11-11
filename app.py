@@ -149,6 +149,7 @@ def edit_activity(activity_id):
         }
         mongo.db.activities.update({"_id": ObjectId(activity_id)}, submit)
         flash("Activity Successfully Updated")
+        return redirect(url_for("get_activities"))
     activity = mongo.db.activities.find_one({"_id": ObjectId(activity_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("pages/edit-activity.html", activity=activity, categories=categories)
