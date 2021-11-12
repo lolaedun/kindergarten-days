@@ -58,7 +58,9 @@ input[type="checkbox"] {
 .navbar {
      background-color: #b82cb9; 
 } 
-
+.btn-2 {
+     margin-top: 10px;
+}
 .btn-outline-dark {
 
      margin-left: 5rem;

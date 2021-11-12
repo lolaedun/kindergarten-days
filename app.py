@@ -20,10 +20,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 @app.route("/")
 def home():
 
     return render_template("pages/home.html")
+
 
 @app.route("/activities")
 def get_activities():
@@ -122,7 +124,7 @@ def add_activity():
             "game": request.form.get("game"),
             "game_description": request.form.get("game_description"),
             "watercolour": request.form.get("watercolour"),
-            "watercolour_description": request.form.get("watercolour_description")   
+            "watercolour_description": request.form.get("watercolour_description")
         }
         mongo.db.activities.insert_one(activity)
         flash("Activity Successfully Added")
