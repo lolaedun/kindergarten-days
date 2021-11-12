@@ -33,6 +33,11 @@ input[type="checkbox"] {
      background-image: url(../images/bg2.png);
      
 }
+.jumbotron-bg1 {
+     background-image: url(../images/bg1.png);
+     height: auto;
+     
+}
 .slider {
      padding-top: 10rem;
  }
