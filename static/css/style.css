@@ -95,4 +95,9 @@ input[type="checkbox"] {
      color: black;
 }
 
+.date, .date:not(.collapsed) {
+     background-color: #b82cb9;
+     color: black;
+}
+
 /* Media Queries*/
