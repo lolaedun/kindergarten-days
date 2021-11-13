@@ -114,6 +114,24 @@
                     </div>
                 </div>
             </div>
+            <!-- Text inputs for the Important Dates and Description -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        
+                        <label class="form-label" for="date"> Important Dates </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="date_description" name="date_description" rows="4">
+                        {{- activity.date_description -}}
+                        </textarea>
+                        <label class="form-label" for="date_description
+                    ">Important Dates Description</label>
+                    </div>
+                </div>
+            </div>
 
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-block mb-4">Save Edit</button>

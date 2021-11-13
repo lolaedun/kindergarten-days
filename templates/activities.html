@@ -93,6 +93,25 @@
   </div>
 </div>
 
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFour">
+    <button class="accordion-button collapsed watercolour" type="button" data-bs-toggle="collapse"
+      data-bs-target="#id_dates_{{ activity._id }}" aria-expanded="false" aria-controls="#id_dates_{{ activity._id }}">
+      <strong>Important Dates this Week </strong>: 
+      {% if activity.is_completed == "on" %}
+      <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+        title="You have completed this task!">
+      </i>
+      {% endif %}
+    </button>
+  </h2>
+  <div id="id_dates_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingFour">
+    <div class="accordion-body">
+      {{ activity.date_description}}
+    </div>
+  </div>
+</div>
+
 
   {% endfor %}
 </div>
