@@ -31,6 +31,7 @@ input[type="checkbox"] {
 
 .jumbotron-bg2{
      background-image: url(../images/bg2.png);
+     height: auto;
      
 }
 .jumbotron-bg1 {
