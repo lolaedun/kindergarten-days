@@ -28,28 +28,30 @@
     <ul class="navbar-nav mr-auto text-center">
       
       {% if session.user %}
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('profile', username=session['user'])}}">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('get_activities')}}">Activities</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('add_activity')}}">Add Activity</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('profile', username=session['user'])}}">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('get_activities')}}">Activities</a>
+        </li>
+      {% if session.user|lower == "admin"|lower %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('add_activity')}}">Add Activity</a>
+        </li>
+      {% endif %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
+        </li>
       {% else %}
-      <li class="nav-item active">
-        <a class="nav-link" href="{{url_for('home')}}">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('login')}}">Log In</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('register')}}">Register</a>
-      </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{{url_for('home')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('login')}}">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('register')}}">Register</a>
+        </li>
       {% endif %}
     </ul>
   </div>
