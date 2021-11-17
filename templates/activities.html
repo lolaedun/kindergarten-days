@@ -19,11 +19,7 @@
     <button class="accordion-button collapsed story" type="button" data-bs-toggle="collapse"
       data-bs-target="#id_book_{{ activity._id }}" aria-expanded="true" aria-controls="#id_book_{{ activity._id }}">
       <strong>Story of the Week </strong>: {{ activity.book }} 
-      {% if activity.is_completed == "on" %}
-      <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-        title="You have completed this task!">
-      </i>
-      {% endif %}
+      
     </button>
     
   </h2>
@@ -40,11 +36,7 @@
     <button class="accordion-button collapsed craft" type="button" data-bs-toggle="collapse"
       data-bs-target="#id_crafts_{{ activity._id }}" aria-expanded="true" aria-controls="#id_crafts_{{ activity._id }}">
       <strong>Craft of the Week </strong>: {{ activity.craft }}
-      {% if activity.is_completed == "on" %}
-      <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-        title="You have completed this task!">
-      </i>
-      {% endif %}
+      
     </button>
   </h2>
   <div id="id_crafts_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingTwo">
@@ -59,11 +51,7 @@
     <button class="accordion-button collapsed watercolour" type="button" data-bs-toggle="collapse"
       data-bs-target="#id_paintings_{{ activity._id }}" aria-expanded="false" aria-controls="#id_paintings_{{ activity._id }}">
       <strong>Watercolour of the Week </strong>: {{ activity.watercolour }}
-      {% if activity.is_completed == "on" %}
-      <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-        title="You have completed this task!">
-      </i>
-      {% endif %}
+      
       
     </button>
   </h2>
@@ -79,11 +67,7 @@
     <button class="accordion-button collapsed game" type="button" data-bs-toggle="collapse"
       data-bs-target="#id_games_{{ activity._id }}" aria-expanded="false" aria-controls="#id_games_{{ activity._id }}">
       <strong>Game of the Week </strong>: {{ activity.game }}
-      {% if activity.is_completed == "on" %}
-      <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-        title="You have completed this task!">
-      </i>
-      {% endif %}
+      
     </button>
   </h2>
   <div id="id_games_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingFour">
@@ -98,11 +82,7 @@
     <button class="accordion-button collapsed date" type="button" data-bs-toggle="collapse"
       data-bs-target="#id_dates_{{ activity._id }}" aria-expanded="false" aria-controls="#id_dates_{{ activity._id }}">
       <strong>Important Dates this Week </strong>: 
-      {% if activity.is_completed == "on" %}
-      <i class="fas fa-check-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-        title="You have completed this task!">
-      </i>
-      {% endif %}
+      
     </button>
   </h2>
   <div id="id_dates_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingFour">
