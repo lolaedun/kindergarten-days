@@ -126,24 +126,19 @@ watercolour_description     | String
 dates_description           | String  
 
 
-#### **Whatever:**
+#### **Categories:**
 Key                 | Value
 --------------------|-----------
 _id                 | ObjectId
-name                | String
-instructions        | String
-type                | String
+Books               | String
+Watercolour         | String
+Craft               | String
+Handwork            | String
+Games               | String
+Month               | String
+Date                | String
 
-
-
-#### **Activites:**
-
-Key                 | Value
---------------------|-----------
-_id                 | ObjectId
-theme               | Themes
-is_completed        | Boolean
-date_range          | String    
+ 
 
 
 
