@@ -107,18 +107,23 @@ _id      | ObjectId
 username | String
 password | String
 
-#### **Themes:**
+#### **Activities:**
 
-Key                 | Value
---------------------|-----------
-_id                 | ObjectId
-name                | String
-letter_of_week      | String
-craft               | Whatever
-book                | String
-circle_game         | Whatever
-handwork            | Whatever
-week_number         | Integer   
+Key                         | Value
+----------------------------|-----------
+_id                         | ObjectId
+month                       | String
+theme                       | String 
+letter_of_week              | String
+book                        | String
+book_description            | String
+craft                       | String
+craft_description           | String
+game                        | String
+game_description            | String
+watercolour                 | String
+watercolour_description     | String
+dates_description           | String  
 
 
 #### **Whatever:**
