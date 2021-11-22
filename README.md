@@ -3,7 +3,7 @@
 Welcome to a waldorf steinar inspired webpage for kindergarten children (ages 3-6). Full of seasonal activities to provide inspiration for parents
 who are curious about home schooling, self isolating or looking for ideas to keep little ones engaged in learning and playing.
 
-This website provides full CRUD functionality to the admin user to manipulate activities that are displayed to the user.
+This website provides full CRUD functionality to the admin user to manipulate activities that are displayed to the standard user.
 
 ## **UX**
 
@@ -59,7 +59,11 @@ I have used [ColourLovers](https://www.colourlovers.com/palettes) to find inspir
 ##### FONT PAIRINGS
   **Montserrat** and **Crimson**  are the two fonts that I have chosen and seem to work well on education based websites.
 
+##### ICONS
 
+A Favicon was added to the site. I desigbed an orange circle with the letter K and green leaves using the chosen brand colours.
+
+![Favicon](/static/images/favicon.png)
 
 
 ![Colours](wireframes/Kindergarten-colour-theme.png)
