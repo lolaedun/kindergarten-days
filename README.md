@@ -3,6 +3,8 @@
 Welcome to a waldorf steinar inspired webpage for kindergarten children (ages 3-6). Full of seasonal activities to provide inspiration for parents
 who are curious about home schooling, self isolating or looking for ideas to keep little ones engaged in learning and playing.
 
+This website provides full CRUD functionality to the admin user to manipulate activities that are displayed to the user.
+
 ## **UX**
 
 ### **User Goals**
