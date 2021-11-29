@@ -31,7 +31,6 @@ def home():
 def get_activities():
     now = datetime.now()
     activities = list(mongo.db.activities.find({'month': now.strftime('%B')}))
-    print(activities)
     return render_template("pages/activities.html", activities=activities)
 
 
@@ -39,7 +38,6 @@ def get_activities():
 def filter_activities():
     month = request.form.get('month')
     activities = list(mongo.db.activities.find({'month': month}))
-    print(activities)
     return render_template("pages/activities.html", activities=activities)
 
 
