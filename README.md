@@ -164,7 +164,6 @@ Date                | String
 - [Font Awesome](https://fontawesome.com/) to provide icons for the website.
 - [Bootstrap](https://getbootstrap.com/) to simplify the structure of the website and make the website responsive easily.
 - [Google Fonts](https://fonts.google.com/) to style the website fonts.
-- [jQuery](https://jquery.com/) JavaScript library.
 
 ### **Tools**
 - [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
