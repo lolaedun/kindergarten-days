@@ -17,5 +17,3 @@
     });
   }, false);
 })();
-
-$('.collapse').collapse()
