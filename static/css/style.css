@@ -81,27 +81,26 @@ input[type="checkbox"] {
 
 .story, .story:not(.collapsed) {
      background-color: #ff4f9a;
-     color: black;
+     color: #000000;
 }
 
 .craft, .craft:not(.collapsed) {
      background-color: #f6b647;
-     color: black;
+     color: #000000;
 }
 
 .watercolour, .watercolour:not(.collapsed) {
      background-color: #6cce3b;
-     color: black;
+     color: #000000;
 }
 
 .game, .game:not(.collapsed) {
      background-color: #38b2ff;
-     color: black;
+     color: #000000;
 }
 
 .date, .date:not(.collapsed) {
      background-color: #b82cb9;
-     color: black;
+     color: #000000;
 }
 
-/* Media Queries*/
