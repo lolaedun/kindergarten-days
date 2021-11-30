@@ -24,11 +24,18 @@ mongo = PyMongo(app)
 @app.route("/")
 def home():
 
+    """
+    Will render the home page
+    """
+
     return render_template("pages/home.html")
 
 
 @app.route("/activities")
 def get_activities():
+    """
+    Will display activities for the current month
+    """
     now = datetime.now()
     activities = list(mongo.db.activities.find({'month': now.strftime('%B')}))
     return render_template("pages/activities.html", activities=activities)
@@ -36,6 +43,9 @@ def get_activities():
 
 @app.route("/filter", methods=["GET", "POST"])
 def filter_activities():
+    """
+    Will filter activities based on month selected by user
+    """
     month = request.form.get('month')
     activities = list(mongo.db.activities.find({'month': month}))
     return render_template("pages/activities.html", activities=activities)
@@ -43,8 +53,12 @@ def filter_activities():
 
 @app.route("/register/user", methods=["GET", "POST"])
 def register():
+    """
+    Will check if user exists if not
+    register user in the database
+    """
     if request.method == "POST":
-        # check if username already exists in db
+        
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -58,7 +72,7 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        # put the new user into 'session' cookie
+        
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("profile", username=session["user"]))
@@ -67,32 +81,39 @@ def register():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Will check if user exists and will run validations
+    for usernames and passwords
+    """
     if request.method == "POST":
-        # check if username exists in db
+        
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            # ensure hashed password matches user input
+            
             if check_password_hash(existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
                 return redirect(url_for("profile", username=session["user"]))
             else:
-                # invalid password match
+                
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
 
         else:
-            # username doesn't exist
+            
             flash("Incorrect Username and/or Password")
-            # return redirect(url_for("login")
+            
     return render_template("pages/login-user.html")
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    # grab the session user's username from db
+    """
+    Display session username from database
+    """
+    
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     if session["user"]:
@@ -102,7 +123,10 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
-    # remove user from session cookie
+    """
+    Remove user from session cookie
+    """
+    
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
@@ -110,6 +134,9 @@ def logout():
 
 @app.route("/add/activity", methods=["GET", "POST"])
 def add_activity():
+    """
+    Allows user to add activities from form to the database
+    """
     if request.method == "POST":
         activity = {
             "month": request.values.get("month"),
@@ -135,6 +162,9 @@ def add_activity():
 
 @app.route("/edit/activity/<activity_id>", methods=["GET", "POST"])
 def edit_activity(activity_id):
+    """
+    Allows user to edit activities and update the database
+    """
     if request.method == "POST":
         submit = {
             "month": request.values.get("month"),
@@ -161,6 +191,9 @@ def edit_activity(activity_id):
 
 @app.route("/delete/<activity_id>")
 def delete_activity(activity_id):
+    """
+    Deletes activities from the database
+    """
     mongo.db.activities.remove({"_id": ObjectId(activity_id)})
     flash("Activity Successfully Deleted")
     return redirect(url_for("get_activities"))
