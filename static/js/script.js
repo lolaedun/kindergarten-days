@@ -1,14 +1,14 @@
-
 // For disabling form submissions if there are invalid fields
 'use strict';
 (function() {
   window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('needs-validation');
+    const forms = document.querySelectorAll('.needs-validation');
     // Loop over them and prevent submission
-    forms.filter.call((form) => {
-      form.addEventListener('submit', 
-      (event) => {
+    forms.filter((form) => {
+      form.addEventListener(
+        'submit', 
+        (event) => {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
