@@ -7,7 +7,8 @@
     const forms = document.querySelectorAll('needs-validation');
     // Loop over them and prevent submission
     forms.filter.call((form) => {
-      form.addEventListener('submit', function(event) {
+      form.addEventListener('submit', 
+      (event) => {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();

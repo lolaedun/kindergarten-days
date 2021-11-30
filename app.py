@@ -4,8 +4,8 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from flask_login import current_user
-from flask_security import Security, SQLAlchemyUserDatastore, \
-    UserMixin, RoleMixin, login_required
+from flask_security import (Security, SQLAlchemyUserDatastore, \
+    UserMixin, RoleMixin, login_required)
 from bson.objectid import ObjectId
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
