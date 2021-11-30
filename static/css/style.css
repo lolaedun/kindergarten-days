@@ -81,8 +81,15 @@ h1, h2, h3, h4 {
      font-size: 2rem;
 }
 .btn-outline-dark {
-
+     font-size: 1.5rem;
      margin-left: 5rem;
+ }
+ .btn-danger {
+      font-size: 1.5rem;
+ }
+ .btn-outline-info {
+
+     font-size: 1.9rem;
  }
 .space {
      padding-top: 5rem;
@@ -109,6 +116,7 @@ h1, h2, h3, h4 {
 .game, .game:not(.collapsed) {
      background-color: #38b2ff;
      color: #000000;
+     font-size: 2rem;
 }
 
 .date, .date:not(.collapsed) {
