@@ -127,8 +127,14 @@ There is a flash warning message if incorrect username or password is entered. A
 
 A flash message appears if login was successful welcoming the user. The user is immediately logged into profile page with access to view the activities.
 
+The home, login and register pages are no longer visible once the user has logged in.
+
 
 #### ACTIVITIES
+This page displays the current activities for the month with an accordion that holds more information on the activity.
+
+There is also a dropdown search function to choose and view a different month.
+![activities](static/docs/screenshots/activities.png)
 
 #### Admin User and User
 ##### **CREATE**
