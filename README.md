@@ -101,6 +101,29 @@ You can find my wireframes below:
 
 For a pdf version of all the wireframes you can access them here:  [WireFrame PDF](static/docs/wireframes/Activity-wireframes.pdf)
 
+# Features
+## Existing Features
+
+### Elements on the page
+
+#### Register
+A simple registration form was created to collect user name and password to send to the database using the register button. 
+
+There is a flash warning message if a user already exists. A link to login from the registration page is available if a user has already been registered and exists on the database.
+
+A flash message appears if registration was successful and a user profile is created. The user is immediately logged into profile page with access to view the activities.
+#### Log in
+#### Activities
+#### Admin User and User
+##### **CREATE**
+##### **READ**
+##### **UPDATE**
+##### **DELETE**
+##### **USER PROFILE**
+#### Log Out
+
+
+
 ### **Database Structure**
 
 I have used MongoDB to set up the database for this project with the following collections: 
