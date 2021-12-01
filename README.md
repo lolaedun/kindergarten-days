@@ -117,8 +117,15 @@ Form Validations have been added to provide feedback to the user.
 There is a flash warning message if a user already exists. A link to login from the registration page is available if a user has already been registered and exists on the database.
 
 A flash message appears if registration was successful and a user profile is created. The user is immediately logged into profile page with access to view the activities.
-#### LOG IN
 
+#### LOG IN
+A simple login form was created to find user in the database. Form validations have been added to provide feedback to the user.
+![Invalid](static/docs/screenshots/login-invalid.png)
+![Valid](static/docs/screenshots/login-valid.png)
+
+There is a flash warning message if incorrect username or password is entered. A link to register from the login page is available if a user has not registered yet.
+
+A flash message appears if login was successful welcoming the user. The user is immediately logged into profile page with access to view the activities.
 
 
 #### Activities
