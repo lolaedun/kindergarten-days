@@ -41,6 +41,15 @@ h1, h2, h3, h4 {
      height: auto;
      
 }
+.jumbotron-404 {
+     background-image: url(../images/404.png);
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+   
+}
 .display-4 {
      font-size: 4.7rem
 }
