@@ -33,17 +33,21 @@ h1, h2, h3, h4 {
 .jumbotron-login{
      background-image: url(../images/waldorf-login.png);
 }
-
-.jumbotron-bg2{
-     background-image: url(../images/bg2.png);
-     height: auto;
-     
-}
 .jumbotron-bg1 {
      background-image: url(../images/bg1.png);
      height: auto;
      
 }
+.jumbotron-bg2{
+     background-image: url(../images/bg2.png);
+     height: auto;    
+}
+.jumbotron-bg3 {
+     background-image: url(../images/bg3.png);
+     height: auto;
+     
+}
+
 .jumbotron-404 {
      background-image: url(../images/404.png);
      background-attachment: fixed;
