@@ -148,6 +148,11 @@ Admin users can create a new activity for the week by filling out the form which
 All logged in users have access to read the activities and information contained inside each accordion.
 ![read](static/docs/screenshots/read.png)
 ##### **UPDATE**
+Admin users can edit activities for the week by clicking the edit button which loads up the pre-populated form.
+
+Once changes have been saved a flash message displays the named activity has been successfully updated.
+![update](static/docs/screenshots/update.png)
+
 ##### **DELETE**
 ##### **USER PROFILE**
 #### Log Out
