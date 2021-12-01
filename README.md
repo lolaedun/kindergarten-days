@@ -128,7 +128,8 @@ There is a flash warning message if incorrect username or password is entered. A
 A flash message appears if login was successful welcoming the user. The user is immediately logged into profile page with access to view the activities.
 
 
-#### Activities
+#### ACTIVITIES
+
 #### Admin User and User
 ##### **CREATE**
 ##### **READ**
