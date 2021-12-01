@@ -197,7 +197,16 @@ def delete_activity(activity_id):
     mongo.db.activities.remove({"_id": ObjectId(activity_id)})
     flash("Activity Successfully Deleted")
     return redirect(url_for("get_activities"))
+"""
+Displays error pages
+"""
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("pages/404.html"), 404
 
+@app.errorhandler(500)
+def server_error(e):
+    return render_template("pages/500.html"), 500
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

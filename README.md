@@ -113,6 +113,7 @@ There is a flash warning message if a user already exists. A link to login from 
 
 A flash message appears if registration was successful and a user profile is created. The user is immediately logged into profile page with access to view the activities.
 #### Log in
+
 #### Activities
 #### Admin User and User
 ##### **CREATE**
