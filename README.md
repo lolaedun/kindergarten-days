@@ -66,7 +66,7 @@ A Favicon was added to the site. I desigbed an orange circle with the letter K a
 ![Favicon](/static/images/favicon.png)
 
 
-![Colours](wireframes/Kindergarten-colour-theme.png)
+![Colours](static/docs/wireframes/Kindergarten-colour-theme.png)
 
 ##### LOGO
 I have created a simple and colourful logo to represent the purpose of the website using Canva. I have also used the chosen fonts of **Montserrat** and **Crimson** to create the logo and keep the consistency of fonts used throughout the site.
@@ -82,24 +82,24 @@ part of the design and planning process for this project.
 
 You can find my wireframes below:
 
-### [Mobile Wireframe : Home](wireframes/1.home-phone.png)
-### [Mobile Wireframe : Theme of the Week](wireframes/2.Theme-Week-phone.png)
-### [Mobile Wireframe : Activity Page](wireframes/3.Activity-Page-phone.png)
+### [Mobile Wireframe : Home](static/docs/wireframes/1.home-phone.png)
+### [Mobile Wireframe : Theme of the Week](static/docs/wireframes/2.Theme-Week-phone.png)
+### [Mobile Wireframe : Activity Page](static/docs/wireframes/3.Activity-Page-phone.png)
 
 &nbsp;
 
-### [Tablet Wireframe : Home](wireframes/4.home-ipad.png)
-### [Tablet Wireframe : Theme of the Week ](wireframes/5.Theme-Week-ipad.png)
-### [Tablet Wireframe : Activity Page](wireframes/6.Activity-Page-ipad.png)
+### [Tablet Wireframe : Home](static/docs/wireframes/4.home-ipad.png)
+### [Tablet Wireframe : Theme of the Week ](static/docs/wireframes/5.Theme-Week-ipad.png)
+### [Tablet Wireframe : Activity Page](static/docs/wireframes/6.Activity-Page-ipad.png)
 
 &nbsp;
 
-### [Desktop Wireframe: Home](wireframes/7.home-desktop.png)
-### [Desktop Wireframe : Theme of the Week ](wireframes/8.Theme-Week-Desktop.png)
-### [Desktop Wireframe : Activity Page](wireframes/9.Activity-Page-Desktop.png)
+### [Desktop Wireframe: Home](static/docs/wireframes/7.home-desktop.png)
+### [Desktop Wireframe : Theme of the Week ](static/docs/wireframes/8.Theme-Week-Desktop.png)
+### [Desktop Wireframe : Activity Page](static/docs/wireframes/9.Activity-Page-Desktop.png)
 
 
-For a pdf version of all the wireframes you can access them here:  [WireFrame PDF](wireframes/Activity-wireframes.pdf)
+For a pdf version of all the wireframes you can access them here:  [WireFrame PDF](static/docs/wireframes/Activity-wireframes.pdf)
 
 ### **Database Structure**
 
