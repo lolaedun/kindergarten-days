@@ -109,6 +109,11 @@ For a pdf version of all the wireframes you can access them here:  [WireFrame PD
 #### REGISTER
 A simple registration form was created to collect user name and password to send to the database using the register button. 
 
+Form Validations have been added to provide feedback to the user.
+
+![Invalid](static/docs/screenshots/register-invalid.png)
+![Valid](static/docs/screenshots/register-valid.png)
+
 There is a flash warning message if a user already exists. A link to login from the registration page is available if a user has already been registered and exists on the database.
 
 A flash message appears if registration was successful and a user profile is created. The user is immediately logged into profile page with access to view the activities.
