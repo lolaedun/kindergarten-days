@@ -159,7 +159,10 @@ Admin user can delete weekly activities. A modal pop up message warns user of pe
 Once a flash message appears confirming it has been successfully deleted and user is returned to the current month of activities page.
 
 ![delete](static/docs/screenshots/delete.png)
+
 ##### **USER PROFILE**
+User profile displays username and a link to a meditation page which opens in a new window. I created the meditation page in a previous project and thought it would be a useful tool to have on hand in the users profile.
+![profile](static/docs/screenshots/profile.png)
 #### Log Out
 #### 404 Page
 
