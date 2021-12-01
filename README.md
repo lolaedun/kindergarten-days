@@ -131,13 +131,16 @@ The home, login and register pages are no longer visible once the user has logge
 
 
 #### ACTIVITIES
-This page displays the current activities for the month with an accordion that holds more information on the activity.
+This page displays the current activities for the month on a weekly basis with an accordion that holds more information for each activity of the week.
 
 There is also a dropdown search function to choose and view a different month.
 ![activities](static/docs/screenshots/activities.png)
 
 #### ADMIN USER and USER
-The admin user has complete access to carry out CRUD functions while the user only has access to read and search activities.
+The admin user has complete access to carry out CRUD functions while the standard user only has access to read and search activities.
+
+The admin user has the edit and delete buttons that appear next to each weekly activity.
+![admin](static/docs/screenshots/admin-edit-delete.png)
 ##### **CREATE**
 Admin users can create a new activity for the week by filling out the form which gets sent to the database.
 ![create](static/docs/screenshots/create.png)
