@@ -167,10 +167,11 @@ User profile displays username and a link to a meditation page which opens in a 
 Users can log out easily from the navbar. A flash message appears to confirm the user has been logged out and is redirected to login page.
 ![logout](static/docs/screenshots/logout.png)
 #### 404 PAGE
-If users try to access a page that doesn't exist, they will be directed to a 404 page.
+If users try to access a page that doesn't exist, they will be directed to a 404 page which I designed.
 ![404](static/docs/screenshots/404.png)
 #### 500 PAGE
-
+I designed a 500 page should the site break for whatever reason.
+![500](static/images/500.png)
 
 ### **Database Structure**
 
