@@ -142,6 +142,8 @@ The admin user has complete access to carry out CRUD functions while the user on
 Admin users can create a new activity for the week by filling out the form which gets sent to the database.
 ![create](static/docs/screenshots/create.png)
 ##### **READ**
+All logged in users have access to read the activities and information contained inside each accordion.
+![read](static/docs/screenshots/read.png)
 ##### **UPDATE**
 ##### **DELETE**
 ##### **USER PROFILE**
