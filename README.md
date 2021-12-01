@@ -142,18 +142,23 @@ The admin user has complete access to carry out CRUD functions while the standar
 The admin user has the edit and delete buttons that appear next to each weekly activity.
 ![admin](static/docs/screenshots/admin-edit-delete.png)
 ##### **CREATE**
-Admin users can create a new activity for the week by filling out the form which gets sent to the database.
+Admin user can create a new activity for the week by filling out the form which gets sent to the database.
 ![create](static/docs/screenshots/create.png)
 ##### **READ**
 All logged in users have access to read the activities and information contained inside each accordion.
 ![read](static/docs/screenshots/read.png)
 ##### **UPDATE**
-Admin users can edit activities for the week by clicking the edit button which loads up the pre-populated form.
+Admin user can edit activities for the week by clicking the edit button which loads up the pre-populated form.
 
 Once changes have been saved a flash message displays the named activity has been successfully updated.
 ![update](static/docs/screenshots/update.png)
 
 ##### **DELETE**
+Admin user can delete weekly activities. A modal pop up message warns user of permanently deleting activity and for user to confirm this action.
+
+Once a flash message appears confirming it has been successfully deleted and user is returned to the current month of activities page.
+
+![delete](static/docs/screenshots/delete.png)
 ##### **USER PROFILE**
 #### Log Out
 #### 404 Page
