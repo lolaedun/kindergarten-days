@@ -136,13 +136,17 @@ This page displays the current activities for the month with an accordion that h
 There is also a dropdown search function to choose and view a different month.
 ![activities](static/docs/screenshots/activities.png)
 
-#### Admin User and User
+#### ADMIN USER and USER
+The admin user has complete access to carry out CRUD functions while the user only has access to read and search activities.
 ##### **CREATE**
+Admin users can create a new activity for the week by filling out the form which gets sent to the database.
+![create](static/docs/screenshots/create.png)
 ##### **READ**
 ##### **UPDATE**
 ##### **DELETE**
 ##### **USER PROFILE**
 #### Log Out
+#### 404 Page
 
 
 
