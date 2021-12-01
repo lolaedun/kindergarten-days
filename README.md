@@ -61,7 +61,7 @@ I have used [ColourLovers](https://www.colourlovers.com/palettes) to find inspir
 
 ##### ICONS
 
-A Favicon was added to the site. I desigbed an orange circle with the letter K and green leaves using the chosen brand colours.
+A Favicon was added to the site. I designed an orange circle with the letter K and green leaves using the chosen brand colours.
 
 ![Favicon](/static/images/favicon.png)
 

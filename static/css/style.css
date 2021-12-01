@@ -60,7 +60,7 @@ h1, h2, h3, h4 {
 .display-4 {
      font-size: 4.7rem
 }
-.lead {
+.lead, h5 {
      font-size: 2.25rem;
 }
 .slider {
@@ -104,7 +104,7 @@ h1, h2, h3, h4 {
      font-size: 1.5rem;
      margin-left: 5rem;
  }
- .btn-danger {
+ .btn-danger, .btn {
       font-size: 1.5rem;
  }
  .btn-outline-info {
@@ -131,6 +131,7 @@ h1, h2, h3, h4 {
 .watercolour, .watercolour:not(.collapsed) {
      background-color: #6cce3b;
      color: #000000;
+     font-size: 2rem;
 }
 
 .game, .game:not(.collapsed) {
