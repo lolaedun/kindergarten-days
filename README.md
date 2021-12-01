@@ -163,11 +163,13 @@ Once a flash message appears confirming it has been successfully deleted and use
 ##### **USER PROFILE**
 User profile displays username and a link to a meditation page which opens in a new window. I created the meditation page in a previous project and thought it would be a useful tool to have on hand in the users profile.
 ![profile](static/docs/screenshots/profile.png)
-#### Log Out
+#### LOG OUT
 Users can log out easily from the navbar. A flash message appears to confirm the user has been logged out and is redirected to login page.
 ![logout](static/docs/screenshots/logout.png)
-#### 404 Page
-
+#### 404 PAGE
+If users try to access a page that doesn't exist, they will be directed to a 404 page.
+![404](static/docs/screenshots/404.png)
+#### 500 PAGE
 
 
 ### **Database Structure**
