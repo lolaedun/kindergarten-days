@@ -355,6 +355,17 @@ Added for message to correct pages.
 * **Verdict**    
 Flash messages are now displaying on the correct pages.
 
+### **Text inside accordion is not responsive**
+
+* **Bug**  
+Text goes outside of accordion so there is scrolling left to right to read the text.
+
+* **Fix**       
+Add text break to accordion body div.
+
+* **Verdict**    
+Text inside accordion behaving as expected.
+
 ## **Deployment**
 
 ### Local Deployment
