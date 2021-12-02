@@ -32,6 +32,10 @@ h5,
 	margin-left: 1rem;
 }
 
+.alert {
+    margin-top: 6rem;
+}
+
 .jumbotron {
 	background-image: url(../images/waldorf-kindergarten-home.png);
 	height: 100vh;
