@@ -247,6 +247,8 @@ Date                | String
 - [GitHub](https://github.com/) to store and share all project code remotely.
 - [Heroku](https://www.heroku.com/) to deploy my website
 - [Balsamiq](https://balsamiq.com/) to create the wireframes for this project.
+- [Google Lighthouse](https://web.dev/lighthouse-accessibility/) to carry out accessibility audits
+- [WAVE](https://wave.webaim.org/) to carry out detailed accessibility evaluation
 * [W3C HTML Validation Service](https://validator.w3.org/) to validate HTML code
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate CSS code
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the website mockups
