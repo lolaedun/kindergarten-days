@@ -342,6 +342,8 @@ CRUD functions for admin working as expected.
 
 [JS Validation](static/docs/wireframes/validations/js-validation.png)
 
+[Accessibility](static/docs/wireframes/validations/accessibility-audit.png)
+
 ## **Bugs**
 
 ### **Flash message not showing on correct pages**
