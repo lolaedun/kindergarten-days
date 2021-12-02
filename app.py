@@ -1,13 +1,12 @@
 import os
+from datetime import datetime
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from flask_login import current_user
-from flask_security import (Security, SQLAlchemyUserDatastore, \
-    UserMixin, RoleMixin, login_required)
+from flask_security import (Security, SQLAlchemyUserDatastore, UserMixin, RoleMixin, login_required)
 from bson.objectid import ObjectId
-from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -58,7 +57,6 @@ def register():
     register user in the database
     """
     if request.method == "POST":
-        
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -71,8 +69,6 @@ def register():
             "password": generate_password_hash(request.form.get("password"))
         }
         mongo.db.users.insert_one(register)
-
-        
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("profile", username=session["user"]))
@@ -86,25 +82,23 @@ def login():
     for usernames and passwords
     """
     if request.method == "POST":
-        
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            
             if check_password_hash(existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
                 return redirect(url_for("profile", username=session["user"]))
             else:
-                
+
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
 
         else:
-            
+
             flash("Incorrect Username and/or Password")
-            
+
     return render_template("pages/login-user.html")
 
 
@@ -113,7 +107,7 @@ def profile(username):
     """
     Display session username from database
     """
-    
+
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     if session["user"]:
@@ -126,7 +120,7 @@ def logout():
     """
     Remove user from session cookie
     """
-    
+
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
@@ -206,7 +200,7 @@ Displays error pages
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template("pages/404.shtml"), 404
+    return render_template("pages/404.html"), 404
 
 
 @app.errorhandler(500)
