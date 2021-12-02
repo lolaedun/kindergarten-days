@@ -230,10 +230,10 @@ Date                | String
 
 ### **Languages**
 
-* [HTML](https://en.wikipedia.org/wiki/HTML)
-* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-* [Python](https://www.python.org/) 
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://www.python.org/) 
 
 ### **Libraries and Frameworks**
 
@@ -249,14 +249,14 @@ Date                | String
 - [Balsamiq](https://balsamiq.com/) to create the wireframes for this project.
 - [Google Lighthouse](https://web.dev/lighthouse-accessibility/) to carry out accessibility audits
 - [WAVE](https://wave.webaim.org/) to carry out detailed accessibility evaluation
-* [W3C HTML Validation Service](https://validator.w3.org/) to validate HTML code
-* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate CSS code
+- [W3C HTML Validation Service](https://validator.w3.org/) to validate HTML code
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate CSS code
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the website mockups
 - [Responsinator](http://www.responsinator.com/) to test device responsiveness
 - [MongoDB Atlas](https://www.mongodb.com/) for database storage
-* [Flask](https://flask.palletsprojects.com/en/1.1.x/) to support extensions in adding functionality to the website
-* [PyMongo](https://docs.mongodb.com/drivers/pymongo/) to work with MongoDB from Python.
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) templating language for Python.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) to support extensions in adding functionality to the website
+- [PyMongo](https://docs.mongodb.com/drivers/pymongo/) to work with MongoDB from Python.
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) templating language for Python.
 
 ## **Testing**
 
