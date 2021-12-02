@@ -342,6 +342,19 @@ CRUD functions for admin working as expected.
 
 [JS Validation](static/docs/wireframes/validations/js-validation.png)
 
+## **Bugs**
+
+### **Flash message not showing on correct pages**
+
+* **Bug**  
+Flash messages are ending up in user profile page rather than the current page.
+
+* **Fix**       
+Added for message to correct pages.
+
+* **Verdict**    
+Flash messages are now displaying on the correct pages.
+
 ## **Deployment**
 
 ### Local Deployment
