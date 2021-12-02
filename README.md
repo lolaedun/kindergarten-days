@@ -469,6 +469,23 @@ To clone the project:
 1. Just beneath, click "Deploy branch". Heroku will now start building the app. When the build is complete, click "view app" to open it.
 1. In order to commit your changes to the branch, use git push to push your changes.
 
+## Credits
+
+### Content - Media - Inspiration
+
+I have used the following websites to gather ideas, information and code examples for the overall content of my website. This website would not have been possible without all these amazing resources: 
+
+- [Earth Schooling](https://earthschooling.info/thebearthinstitute/about-earthschooling/)
+
+- [Google Searches](https://www.google.co.uk/)
+
+- [Project Gutenberg](https://www.gutenberg.org/)
+
+- [You Tube Searches](https://www.youtube.com/)
+
+- [Story Arts -Aesops Fables](https://www.storyarts.org/library/aesops/)
+
+
 
 ### Acknowledgements
 
