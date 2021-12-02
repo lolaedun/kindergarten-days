@@ -22,6 +22,7 @@ This website provides full CRUD functionality to the admin user to manipulate ac
 * As a user, I would like to have a simple and easy to understand dashboard of my weekly activities.
 * As a user, I would like to search for current activites that correspond with the current season.
 * As a user, I would like to be able to have access to activities regardless of the device i'm using.
+* As an admin user, I would like to carry out CRUD functions.
 
 
 ### **Site Owner Goals**
@@ -316,15 +317,22 @@ All working and displaying as expected.
 Site is responsive and working as expected.
 
 #### User story:
-**As a user....**
+**As an admin user, I would like to carry out CRUD functions.**
 
 * **Plan**  
-My plan is...
+My plan is allow admin user to carry out CRUD functions easily.
 * **Implementation**
-* **Test**   
-* **Result**
-* **Verdict** 
+I will create a form to enable admin to add activities to the database, enabling easy creation of new activites.
 
+I will also create an edit form that will pull out activities from the database to allow admin to update the information stored.
+
+Finally, a delete button with a warning pop up to confirm admin wants to delete a block of activities for the week.
+* **Test** 
+I have test all forms and buttons work and information entered is stored and removed from the database.
+* **Result**
+Submit buttons and forms working as expected.
+* **Verdict** 
+CRUD functions for admin working as expected.
 ## **Deployment**
 
 ### Local Deployment
