@@ -1,155 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Montserrat:wght@100&display=swap');
-
-html{
-     font-size: 62.5%;
-}
-body, .accordion-button {
-     font-family: 'Crimson Text', serif;
-     font-size: 2rem;
-}
-p, ul {
-     margin-left: 1.5rem;
-}
-h1, h2, h3, h4 {
-     font-family: 'Montserrat', sans-serif;
-     font-size: 3.5rem;
+html {
+	font-size: 62.5%;
 }
 
- .navbar-dark .navbar-nav .nav-link {
-     color: #ffffff;
-     margin-left: 1rem;
- }
-
-.jumbotron{
-     background-image: url(../images/waldorf-kindergarten-home.png);
-     height: 100vh;
-     background-size: cover;
+body,
+.accordion-button {
+	font-family: 'Crimson Text', serif;
+	font-size: 2rem;
 }
 
-.jumbotron-register{
-     background-image: url(../images/waldorf-register2.png);
+p,
+ul {
+	margin-left: 1.5rem;
 }
 
-.jumbotron-login{
-     background-image: url(../images/waldorf-login.png);
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3.5rem;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #ffffff;
+	margin-left: 1rem;
+}
+
+.jumbotron {
+	background-image: url(../images/waldorf-kindergarten-home.png);
+	height: 100vh;
+	background-size: cover;
+}
+
+.jumbotron-register {
+	background-image: url(../images/waldorf-register2.png);
+}
+
+.jumbotron-login {
+	background-image: url(../images/waldorf-login.png);
+}
+
 .jumbotron-bg1 {
-     background-image: url(../images/bg1.png);
-     height: auto;
-     
+	background-image: url(../images/bg1.png);
+	height: auto;
 }
-.jumbotron-bg2{
-     background-image: url(../images/bg2.png);
-     height: auto;    
+
+.jumbotron-bg2 {
+	background-image: url(../images/bg2.png);
+	height: auto;
 }
+
 .jumbotron-bg3 {
-     background-image: url(../images/bg3.png);
-     height: auto;
-     
+	background-image: url(../images/bg3.png);
+	height: auto;
 }
 
 .jumbotron-404 {
-     background-image: url(../images/404.png);
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     
-   
+	background-image: url(../images/404.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 .jumbotron-500 {
-     background-image: url(../images/500.png);
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     
-   
+	background-image: url(../images/500.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 .display-4 {
-     font-size: 4.7rem
+	font-size: 4.7rem
 }
-.lead, h5 {
-     font-size: 2.25rem;
+
+.lead,
+h5 {
+	font-size: 2.25rem;
 }
+
 .slider {
-     padding-top: 24rem;
- }
+	padding-top: 24rem;
+}
 
 .bg-dark {
-     --bs-bg-opacity: .3;
+	--bs-bg-opacity: .3;
 }
+
 .activity-title {
-     margin-left: 1rem;
-     margin-top: 1rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
 .card {
-     
-     background-color: transparent;
-     
+	background-color: transparent;
 }
 
 .form-size {
-     max-width: 600px;
+	max-width: 600px;
 }
 
 .navbar {
-     background-color: #b82cb9; 
+	background-color: #b82cb9;
 }
+
 .navbar-dark .navbar-toggler {
-     
-     font-size: 2.5rem;
+	font-size: 2.5rem;
 }
+
 .btn-lg {
-     
-     font-size: 2rem;
+	font-size: 2rem;
 }
+
 .btn-2 {
-     margin-top: 10px;
-     font-size: 2rem;
+	margin-top: 10px;
+	font-size: 2rem;
 }
+
 .btn-outline-dark {
-     font-size: 1.5rem;
-     margin-left: 5rem;
- }
- .btn-danger, .btn {
-      font-size: 1.5rem;
- }
- .btn-outline-info {
+	font-size: 1.5rem;
+	margin-left: 5rem;
+}
 
-     font-size: 1.9rem;
- }
+.btn-danger,
+.btn {
+	font-size: 1.5rem;
+}
+
+.btn-outline-info {
+	font-size: 1.9rem;
+}
+
 .space {
-     padding-top: 8rem;
+	padding-top: 8rem;
 }
+
 .form-control {
-     font-size: 2rem;
+	font-size: 2rem;
 }
 
-.story, .story:not(.collapsed) {
-     background-color: #ff4f9a;
-     color: #000000;
+.story,
+.story:not(.collapsed) {
+	background-color: #ff4f9a;
+	color: #000000;
 }
 
-.craft, .craft:not(.collapsed) {
-     background-color: #f6b647;
-     color: #000000;
+.craft,
+.craft:not(.collapsed) {
+	background-color: #f6b647;
+	color: #000000;
 }
 
-.watercolour, .watercolour:not(.collapsed) {
-     background-color: #6cce3b;
-     color: #000000;
-     font-size: 2rem;
+.watercolour,
+.watercolour:not(.collapsed) {
+	background-color: #6cce3b;
+	color: #000000;
+	font-size: 2rem;
 }
 
-.game, .game:not(.collapsed) {
-     background-color: #38b2ff;
-     color: #000000;
-     font-size: 2rem;
+.game,
+.game:not(.collapsed) {
+	background-color: #38b2ff;
+	color: #000000;
+	font-size: 2rem;
 }
 
-.date, .date:not(.collapsed) {
-     background-color: #b82cb9;
-     color: #000000;
+.date,
+.date:not(.collapsed) {
+	background-color: #b82cb9;
+	color: #000000;
 }
