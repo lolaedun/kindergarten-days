@@ -340,7 +340,7 @@ CRUD functions for admin working as expected.
 
 [CSS Validation](static/docs/wireframes/validations/css-validation.png)
 
-[JS Validation](wireframes/validations/js-validation.png)
+[JS Validation](static/docs/wireframes/validations/js-validation.png)
 
 ## **Deployment**
 

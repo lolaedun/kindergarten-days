@@ -110,9 +110,11 @@ h5 {
 	font-size: 2.5rem;
 }
 
-.btn-lg {
+.btn-lg,
+.form-control {
 	font-size: 2rem;
 }
+
 
 .btn-2 {
 	margin-top: 10px;
@@ -135,10 +137,6 @@ h5 {
 
 .space {
 	padding-top: 8rem;
-}
-
-.form-control {
-	font-size: 2rem;
 }
 
 .story,
