@@ -19,7 +19,7 @@ This website provides full CRUD functionality to the admin user to manipulate ac
 
 ### **User Stories**
 
-* As a user, I would like to search for seasonal activites.
+* As a user, I would like to search for current activites that correspond with the current season.
 * As a user, I would like to have a simple and easy to understand dashboard of my weekly activities.
 * As a user, I would like to save my completed activites.
 * As a user, I would like to view activities yet to be completed.
@@ -250,6 +250,42 @@ Date                | String
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) to support extensions in adding functionality to the website
 * [PyMongo](https://docs.mongodb.com/drivers/pymongo/) to work with MongoDB from Python.
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) templating language for Python.
+
+## **Testing**
+
+
+
+#### User story:
+**As a user, I would like to search for current activites that correspond with the current season.**
+
+* **Plan**  
+My plan is to create an activities page that loads up activities for the current month. There should be a search button that allows to search ahead of time or back in time.
+* **Implementation**
+The activities are separated on a weekly basis and the current month is displayed when user is logged in. The activities for each week are also colour coded in an accordion style to make it easier to identify the type of activity as well as to read more information on the activity.
+
+Pink = Story
+
+Orange = Craft
+
+Green = Watercolour
+
+Blue = Game
+
+Purple = Important Dates
+
+* **Result**
+Accordions open and close individually and information is easy to accesss and understand
+* **Verdict**  
+Activities are pulled from the database and working as expected. Accordions working as expected.
+
+#### User story:
+**As a user....**
+
+* **Plan**  
+My plan is...
+* **Implementation**  
+* **Result**
+* **Verdict**  
 
 ## **Deployment**
 
