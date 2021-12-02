@@ -22,8 +22,7 @@ This website provides full CRUD functionality to the admin user to manipulate ac
 * As a user, I would like to have a simple and easy to understand dashboard of my weekly activities.
 * As a user, I would like to search for current activites that correspond with the current season.
 * As a user, I would like to be able to have access to activities regardless of the device i'm using.
-* As a user, I would like to upload photos of our completed activities to create a digital album for the year.
-* As a user, I would like to print my week of activities and or digital album.
+
 
 ### **Site Owner Goals**
 * To have a website that can easily create, read, update and delete activites and user profiles.
@@ -170,6 +169,12 @@ If users try to access a page that doesn't exist, they will be directed to a 404
 #### 500 PAGE
 I designed a 500 page should the site break for whatever reason.
 ![500](static/images/500.png)
+
+### Features Left to Implement
+
+- Upload photos of activities to create digital album
+- Print weekly activities and or digital album
+
 
 ### **Database Structure**
 
