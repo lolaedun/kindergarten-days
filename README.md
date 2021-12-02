@@ -336,9 +336,9 @@ CRUD functions for admin working as expected.
 
 ## **Validation Reports**
 
-[HTML Validation](wireframes/validations/html-validation.png)
+[HTML Validation](static/docs/wireframes/validations/html-validation.png)
 
-[CSS Validation](wireframes/validations/css-validation.png)
+[CSS Validation](static/docs/wireframes/validations/css-validation.png)
 
 [JS Validation](wireframes/validations/js-validation.png)
 
