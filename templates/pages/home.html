@@ -1,66 +1,78 @@
 {% extends "base.html" %}
 {% block content %}
-
-
 <div class="jumbotron text-center">
-  <div class="slider">
-    <div class="card bg-dark text-white">
-      <h1 class="display-4">Welcome!</h1>
-      <p class="lead">The place to get a years worth of waldorf inspired activities for your kindergartner</p>
-      <hr class="my-4">
-      <p>Aimed at children between ages 3 - 6 year olds.</p>
-      <p class="lead">
-        <a class="btn game btn-lg" href="{{url_for('register')}}" role="button">Register</a>
-        <a class="btn watercolour btn-lg" href="{{url_for('login')}}" role="button">Login</a>
-      </p>
-    </div>
-  </div>
+   <div class="slider">
+      <div class="card bg-dark text-white">
+         <h1 class="display-4">Welcome!</h1>
+         <p class="lead">The place to get a years worth of waldorf inspired activities for your kindergartner</p>
+         <hr class="my-4">
+         <p>Aimed at children between ages 3 - 6 year olds.</p>
+         <p class="lead">
+            <a class="btn game btn-lg" href="{{url_for('register')}}" role="button">Register</a>
+            <a class="btn watercolour btn-lg" href="{{url_for('login')}}" role="button">Login</a>
+         </p>
+      </div>
+   </div>
 </div>
 <div>
-  <div class="jumbotron jumbotron-bg2 ">
-    <div class="story">
-      <h2 class="text-center">Who is this for?</h2>
+   <div class="jumbotron jumbotron-bg2 ">
+      <div class="story">
+         <h2 class="text-center">Who is this for?</h2>
+         <p>
+            Are you a parent/carer and or a homeschooler? Have you had to self-isolate with your young child? Are you
+            looking for ideas to keep your pre-schooler or kindergartner learning in a playful manner? Do you like the idea
+            of montessori and waldorf steinar based learning? If so, you are in the right place!
+         </p>
+      </div>
+      <div>
+         <h2 class="text-center"> How does it work?</h2>
+         <p> Once you register, you have immediate access to inspired activites for the current month. These are
+            grouped into weeks and have been designed for the busy parent/grown-up in mind. They are quick snapshots to help
+            you plan your week of play-based learning without feeling overwhelmed with large amounts of information to
+            impart to your little human. Each week comprises of:
+         </p>
+         <ul>
+            <li>
+               <h4>story of the week</h4>
+               <p> inspiring stories or books to read or tell to your little ones</p>
+            </li>
+            <li>
+               <h4>craft of the week</h4>
+               <p> simple craft projects you can do together throughout the week</p>
+            </li>
+            <li>
+               <h4>watercolour of the week</h4>
+               <p> A watercolour story to engage little ones in painting and story telling</p>
+            </li>
+            <li>
+               <h4>game of the week</h4>
+               <p> finger plays and or circle games to try out during the week that consists of rhymes</p>
+            </li>
+            <li>
+               <h4>Important dates of the week</h4>
+               <p> important dates to be aware of and incorporate into your daily activities to prepare for and celebrate
+               </p>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="watercolour">
+      <h2 class="text-center">Kindergarten Days...</h2>
       <p>
-        Are you a parent/carer and or a homeschooler? Have you had to self-isolate with your young child? Are you looking for ideas to keep your pre-schooler or kindergartner learning in a playful manner? Do you like the idea of montessori and waldorf steinar based learning? If so, you are in the right place!
+         The life of the Kindergarten child should be largely filled with:
       </p>
-    </div>
-    <div class="">
-      <h2 class="text-center"> How does it work?</h2>
-      <p class=""> Once you register, you have immediate access to inspired activites for the current month. These are grouped into weeks and have been designed for the busy parent/grown-up in mind. They are quick snapshots to help you plan your week of play-based learning without feeling overwhelmed with large amounts of information to impart to your little human. Each week comprises of:
-        <ul>
-          <li><h4>story of the week</h4></li>
-          <p> inspiring stories or books to read or tell to your little ones</p>
-          <li><h4>craft of the week</h4></li>
-          <p> simple craft projects you can do together throughout the week</p>
-          <li><h4>watercolour of the week</h4></li>
-          <p> A watercolour story to engage little ones in painting and story telling</p>
-          <li><h4>game of the week</h4></li>
-          <p> finger plays and or circle games to try out during the week that consists of rhymes</p>
-          <li><h4>Important dates of the week</h4></li>
-          <p> important dates to be aware of and incorporate into your daily activities to prepare for and celebrate</p>
-        </ul>
-      </p>
-    </div>
-  </div>
-  <div class="watercolour">
-    <h2 class="text-center">Kindergarten Days...</h2>
-    <p>
-      The life of the Kindergarten child should be largely filled with:
       <ul>
-        <li>time spent outdoors</li>
-        <li>creative play with natural toys</li>
-        <li>modeling activities of the parent (helping them do dishes, cook, clean, care for siblings)</li>
-        <li>teaching the older or younger siblings lessons</li>
-      </ul> 
-    </p>
-    <p>
-    Your family schedule should always be the priority. You can choose to follow this schedule as
-    little or as much as you would like. Follow the schedule exactly or skip some items. 
-    Let it be your guide and be there for you
-    when you need it as a support system for you and your early childhood angel!
-    </p>
-  </div>
+         <li>time spent outdoors</li>
+         <li>creative play with natural toys</li>
+         <li>modeling activities of the parent (helping them do dishes, cook, clean, care for siblings)</li>
+         <li>teaching the older or younger siblings lessons</li>
+      </ul>
+      <p>
+         Your family schedule should always be the priority. You can choose to follow this schedule as
+         little or as much as you would like. Follow the schedule exactly or skip some items.
+         Let it be your guide and be there for you
+         when you need it as a support system for you and your early childhood angel!
+      </p>
+   </div>
 </div>
-
-
 {% endblock %}

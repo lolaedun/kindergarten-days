@@ -269,15 +269,15 @@ My plan is to create an easy to understand dashboard of activities for the month
 * **Implementation**
 The activities are separated on a weekly basis and the current month is displayed when user is logged in. The activities for each week are also colour coded in an accordion style to make it easier to identify the type of activity as well as to read more information on the activity.
 
-Pink = Story
+    Pink = Story
 
-Orange = Craft
+    Orange = Craft
 
-Green = Watercolour
+    Green = Watercolour
 
-Blue = Game
+    Blue = Game
 
-Purple = Important Dates
+    Purple = Important Dates
 
 * **Result**
 Accordions open and close individually and information is easy to accesss and understand
@@ -333,6 +333,15 @@ I have test all forms and buttons work and information entered is stored and rem
 Submit buttons and forms working as expected.
 * **Verdict** 
 CRUD functions for admin working as expected.
+
+## **Validation Reports**
+
+[HTML Validation](wireframes/validations/html-validation.png)
+
+[CSS Validation](wireframes/validations/css-validation.png)
+
+[JS Validation](wireframes/validations/js-validation.png)
+
 ## **Deployment**
 
 ### Local Deployment

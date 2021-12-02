@@ -1,98 +1,82 @@
 {% extends "base.html" %}
 {% block content %}
 {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        {{ message }}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-    
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+   {{ message }}
+   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 {% endfor %}
-
 {% include 'components/forms/months.html'%}
 <div class="accordion" id="category_name">
-  {% for activity in activities %}
-  {% include 'components/accordion.html' %}
+   {% for activity in activities %}
+   {% include 'components/accordion.html' %}
 </div>
-
 <div class="accordion-item">
-  <h2 class="accordion-header" id="headingOne">
-    <button class="accordion-button collapsed story" type="button" data-bs-toggle="collapse"
-      data-bs-target="#id_book_{{ activity._id }}" aria-expanded="true" aria-controls="#id_book_{{ activity._id }}">
-      <strong>Story of the Week </strong>: {{ activity.book }} 
-      
-    </button>
-    
-  </h2>
-  <div id="id_book_{{ activity._id }}"class="accordion-collapse collapse" aria-labelledby="headingOne"
-    data-bs-parent="#accordionExample">
-    <div class="accordion-body text-break">
-      {{ activity.book_description}}
-    </div>
-  </div>
+   <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed story" type="button" data-bs-toggle="collapse"
+         data-bs-target="#id_book_{{ activity._id }}" aria-expanded="true" aria-controls="#id_book_{{ activity._id }}">
+      <strong>Story of the Week </strong>: {{ activity.book }}
+      </button>
+   </h2>
+   <div id="id_book_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body text-break">
+         {{ activity.book_description}}
+      </div>
+   </div>
 </div>
-
 <div class="accordion-item">
-  <h2 class="accordion-header" id="headingTwo">
-    <button class="accordion-button collapsed craft" type="button" data-bs-toggle="collapse"
-      data-bs-target="#id_crafts_{{ activity._id }}" aria-expanded="true" aria-controls="#id_crafts_{{ activity._id }}">
+   <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed craft" type="button" data-bs-toggle="collapse"
+         data-bs-target="#id_crafts_{{ activity._id }}" aria-expanded="true" aria-controls="#id_crafts_{{ activity._id }}">
       <strong>Craft of the Week </strong>: {{ activity.craft }}
-      
-    </button>
-  </h2>
-  <div id="id_crafts_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-    <div class="accordion-body text-break">
-      {{ activity.craft_description}}
-    </div>
-  </div>
+      </button>
+   </h2>
+   <div id="id_crafts_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+      <div class="accordion-body text-break">
+         {{ activity.craft_description}}
+      </div>
+   </div>
 </div>
-
 <div class="accordion-item">
-  <h2 class="accordion-header" id="headingThree">
-    <button class="accordion-button collapsed watercolour" type="button" data-bs-toggle="collapse"
-      data-bs-target="#id_paintings_{{ activity._id }}" aria-expanded="false" aria-controls="#id_paintings_{{ activity._id }}">
+   <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed watercolour" type="button" data-bs-toggle="collapse"
+         data-bs-target="#id_paintings_{{ activity._id }}" aria-expanded="false"
+         aria-controls="#id_paintings_{{ activity._id }}">
       <strong>Watercolour of the Week </strong>: {{ activity.watercolour }}
-      
-      
-    </button>
-  </h2>
-  <div id="id_paintings_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingThree">
-    <div class="accordion-body text-break">
-      {{ activity.watercolour_description}}
-    </div>
-  </div>
+      </button>
+   </h2>
+   <div id="id_paintings_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingThree">
+      <div class="accordion-body text-break">
+         {{ activity.watercolour_description}}
+      </div>
+   </div>
 </div>
-
 <div class="accordion-item">
-  <h2 class="accordion-header" id="headingFour">
-    <button class="accordion-button collapsed game" type="button" data-bs-toggle="collapse"
-      data-bs-target="#id_games_{{ activity._id }}" aria-expanded="false" aria-controls="#id_games_{{ activity._id }}">
+   <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed game" type="button" data-bs-toggle="collapse"
+         data-bs-target="#id_games_{{ activity._id }}" aria-expanded="false" aria-controls="#id_games_{{ activity._id }}">
       <strong>Game of the Week </strong>: {{ activity.game }}
-      
-    </button>
-  </h2>
-  <div id="id_games_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingFour">
-    <div class="accordion-body text-break">
-      {{ activity.game_description}}
-    </div>
-  </div>
+      </button>
+   </h2>
+   <div id="id_games_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingFour">
+      <div class="accordion-body text-break">
+         {{ activity.game_description}}
+      </div>
+   </div>
 </div>
-
 <div class="accordion-item">
-  <h2 class="accordion-header" id="headingFour">
-    <button class="accordion-button collapsed date" type="button" data-bs-toggle="collapse"
-      data-bs-target="#id_dates_{{ activity._id }}" aria-expanded="false" aria-controls="#id_dates_{{ activity._id }}">
-      <strong>Important Dates this Week </strong>: 
-      
-    </button>
-  </h2>
-  <div id="id_dates_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingFour">
-    <div class="accordion-body text-break">
-      {{ activity.date_description}}
-    </div>
-  </div>
+   <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed date" type="button" data-bs-toggle="collapse"
+         data-bs-target="#id_dates_{{ activity._id }}" aria-expanded="false" aria-controls="#id_dates_{{ activity._id }}">
+      <strong>Important Dates this Week </strong>:
+      </button>
+   </h2>
+   <div id="id_dates_{{ activity._id }}" class="accordion-collapse collapse" aria-labelledby="headingFive">
+      <div class="accordion-body text-break">
+         {{ activity.date_description}}
+      </div>
+   </div>
 </div>
-
-
-  {% endfor %}
-</div>
+{% endfor %}
 {% endblock %}
