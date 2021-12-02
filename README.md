@@ -475,3 +475,5 @@ To clone the project:
 I'm not sure I would have done all this work without the incredible support and encouragement from my mentor Simen ([Eventyret_mentor](https://github.com/Eventyret)), personal circumstances made it challenging to keep going but he made sure I had the right amount of support to keep me going.
 
 I thoroughly enjoyed bringing this project to life from a small idea in my head. A big shout out to all the tutors who helped me when my brain felt scrambled, your simple explanations made me see my code from a fresh new perspective.
+
+Thank you also to student services for checking in on me too! It was very much appreciated.
