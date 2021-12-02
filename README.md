@@ -19,10 +19,8 @@ This website provides full CRUD functionality to the admin user to manipulate ac
 
 ### **User Stories**
 
-* As a user, I would like to search for current activites that correspond with the current season.
 * As a user, I would like to have a simple and easy to understand dashboard of my weekly activities.
-* As a user, I would like to save my completed activites.
-* As a user, I would like to view activities yet to be completed.
+* As a user, I would like to search for current activites that correspond with the current season.
 * As a user, I would like to be able to have access to activities regardless of the device i'm using.
 * As a user, I would like to upload photos of our completed activities to create a digital album for the year.
 * As a user, I would like to print my week of activities and or digital album.
@@ -256,10 +254,11 @@ Date                | String
 
 
 #### User story:
-**As a user, I would like to search for current activites that correspond with the current season.**
+**As a user, I would like to have a simple and easy to understand dashboard of my weekly activities.**
 
 * **Plan**  
-My plan is to create an activities page that loads up activities for the current month. There should be a search button that allows to search ahead of time or back in time.
+My plan is to create an easy to understand dashboard of activities for the month separated into weekly blocks. Each block will have 5 types of activities for the week.
+
 * **Implementation**
 The activities are separated on a weekly basis and the current month is displayed when user is logged in. The activities for each week are also colour coded in an accordion style to make it easier to identify the type of activity as well as to read more information on the activity.
 
@@ -279,13 +278,26 @@ Accordions open and close individually and information is easy to accesss and un
 Activities are pulled from the database and working as expected. Accordions working as expected.
 
 #### User story:
+**As a user, I would like to search for current activites that correspond with the current season.**
+
+* **Plan**  
+My plan is to add a search button that allows to search ahead of time or back in time for activities in specific month.
+* **Implementation** 
+I added a drop down select function with months in the year listed and a blue go button to search
+* **Result**
+Users can easily move between the months in the year to search for activities
+* **Verdict**  
+Dropdown and search working as expected.
+
+
+#### User story:
 **As a user....**
 
 * **Plan**  
 My plan is...
 * **Implementation**  
 * **Result**
-* **Verdict**  
+* **Verdict** 
 
 ## **Deployment**
 
