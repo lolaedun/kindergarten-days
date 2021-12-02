@@ -366,6 +366,17 @@ Add text break to accordion body div.
 * **Verdict**    
 Text inside accordion behaving as expected.
 
+### **Deployed site on Heroku stopped working**
+
+* **Bug**  
+Deployed website no longer working
+
+* **Fix**       
+Update requirements.txt file
+
+* **Verdict**    
+Deployed site working as expected.
+
 ## **Deployment**
 
 ### Local Deployment
