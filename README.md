@@ -244,6 +244,7 @@ Date                | String
 * [W3C HTML Validation Service](https://validator.w3.org/) to validate HTML code
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate CSS code
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the website mockups
+- [Responsinator](http://www.responsinator.com/) to test device responsiveness
 - [MongoDB Atlas](https://www.mongodb.com/) for database storage
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) to support extensions in adding functionality to the website
 * [PyMongo](https://docs.mongodb.com/drivers/pymongo/) to work with MongoDB from Python.
@@ -291,11 +292,31 @@ Dropdown and search working as expected.
 
 
 #### User story:
+**As a user, I would like to be able to have access to activities regardless of the device i'm using.**
+
+* **Plan**  
+My plan is to make the website responsive so that it works on various devices and screen sizes.
+* **Implementation** 
+Bootstrap is responsive by default so I will test break points both manually and using tools such as chrome and responsinator.
+* **Test**
+I have tested on various screen sizes and devices.
+
+![phones](static/docs/screenshots/size1.png)
+![tablets](static/docs/screenshots/size2.png)
+
+
+* **Result**
+All working and displaying as expected.
+* **Verdict** 
+Site is responsive and working as expected.
+
+#### User story:
 **As a user....**
 
 * **Plan**  
 My plan is...
-* **Implementation**  
+* **Implementation**
+* **Test**   
 * **Result**
 * **Verdict** 
 
