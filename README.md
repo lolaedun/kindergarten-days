@@ -64,7 +64,7 @@ A Favicon was added to the site. I designed an orange circle with the letter K a
 ![Favicon](/static/images/favicon.png)
 
 
-![Colours](static/docs/wireframes/Kindergarten-colour-theme.png)
+![Colours](docs/wireframes/Kindergarten-colour-theme.png)
 
 ##### LOGO
 I have created a simple and colourful logo to represent the purpose of the website using Canva. I have also used the chosen fonts of **Montserrat** and **Crimson** to create the logo and keep the consistency of fonts used throughout the site.
@@ -80,24 +80,24 @@ part of the design and planning process for this project.
 
 You can find my wireframes below:
 
-### [Mobile Wireframe : Home](static/docs/wireframes/1.home-phone.png)
-### [Mobile Wireframe : Theme of the Week](static/docs/wireframes/2.Theme-Week-phone.png)
-### [Mobile Wireframe : Activity Page](static/docs/wireframes/3.Activity-Page-phone.png)
+### [Mobile Wireframe : Home](docs/wireframes/1.home-phone.png)
+### [Mobile Wireframe : Theme of the Week](docs/wireframes/2.Theme-Week-phone.png)
+### [Mobile Wireframe : Activity Page](docs/wireframes/3.Activity-Page-phone.png)
 
 &nbsp;
 
-### [Tablet Wireframe : Home](static/docs/wireframes/4.home-ipad.png)
-### [Tablet Wireframe : Theme of the Week ](static/docs/wireframes/5.Theme-Week-ipad.png)
-### [Tablet Wireframe : Activity Page](static/docs/wireframes/6.Activity-Page-ipad.png)
+### [Tablet Wireframe : Home](docs/wireframes/4.home-ipad.png)
+### [Tablet Wireframe : Theme of the Week ](docs/wireframes/5.Theme-Week-ipad.png)
+### [Tablet Wireframe : Activity Page](docs/wireframes/6.Activity-Page-ipad.png)
 
 &nbsp;
 
-### [Desktop Wireframe: Home](static/docs/wireframes/7.home-desktop.png)
-### [Desktop Wireframe : Theme of the Week ](static/docs/wireframes/8.Theme-Week-Desktop.png)
-### [Desktop Wireframe : Activity Page](static/docs/wireframes/9.Activity-Page-Desktop.png)
+### [Desktop Wireframe: Home](docs/wireframes/7.home-desktop.png)
+### [Desktop Wireframe : Theme of the Week ](docs/wireframes/8.Theme-Week-Desktop.png)
+### [Desktop Wireframe : Activity Page](docs/wireframes/9.Activity-Page-Desktop.png)
 
 
-For a pdf version of all the wireframes you can access them here:  [WireFrame PDF](static/docs/wireframes/Activity-wireframes.pdf)
+For a pdf version of all the wireframes you can access them here:  [WireFrame PDF](docs/wireframes/Activity-wireframes.pdf)
 
 # Features
 ## Existing Features
@@ -109,8 +109,8 @@ A simple registration form was created to collect user name and password to send
 
 Form Validations have been added to provide feedback to the user.
 
-![Invalid](static/docs/screenshots/register-invalid.png)
-![Valid](static/docs/screenshots/register-valid.png)
+![Invalid](docs/screenshots/register-invalid.png)
+![Valid](docs/screenshots/register-valid.png)
 
 There is a flash warning message if a user already exists. A link to login from the registration page is available if a user has already been registered and exists on the database.
 
@@ -118,8 +118,8 @@ A flash message appears if registration was successful and a user profile is cre
 
 #### LOG IN
 A simple login form was created to find user in the database. Form validations have been added to provide feedback to the user.
-![Invalid](static/docs/screenshots/login-invalid.png)
-![Valid](static/docs/screenshots/login-valid.png)
+![Invalid](docs/screenshots/login-invalid.png)
+![Valid](docs/screenshots/login-valid.png)
 
 There is a flash warning message if incorrect username or password is entered. A link to register from the login page is available if a user has not registered yet.
 
@@ -132,41 +132,41 @@ The home, login and register pages are no longer visible once the user has logge
 This page displays the current activities for the month on a weekly basis with an accordion that holds more information for each activity of the week.
 
 There is also a dropdown search function to choose and view a different month.
-![activities](static/docs/screenshots/activities.png)
+![activities](docs/screenshots/activities.png)
 
 #### ADMIN USER and USER
 The admin user has complete access to carry out CRUD functions while the standard user only has access to read and search activities.
 
 The admin user has the edit and delete buttons that appear next to each weekly activity.
-![admin](static/docs/screenshots/admin-edit-delete.png)
+![admin](docs/screenshots/admin-edit-delete.png)
 ##### **CREATE**
 Admin user can create a new activity for the week by filling out the form which gets sent to the database.
-![create](static/docs/screenshots/create.png)
+![create](docs/screenshots/create.png)
 ##### **READ**
 All logged in users have access to read the activities and information contained inside each accordion.
-![read](static/docs/screenshots/read.png)
+![read](docs/screenshots/read.png)
 ##### **UPDATE**
 Admin user can edit activities for the week by clicking the edit button which loads up the pre-populated form.
 
 Once changes have been saved a flash message displays the named activity has been successfully updated.
-![update](static/docs/screenshots/update.png)
+![update](docs/screenshots/update.png)
 
 ##### **DELETE**
 Admin user can delete weekly activities. A modal pop up message warns user of permanently deleting activity and for user to confirm this action.
 
 Once a flash message appears confirming it has been successfully deleted and user is returned to the current month of activities page.
 
-![delete](static/docs/screenshots/delete.png)
+![delete](docs/screenshots/delete.png)
 
 ##### **USER PROFILE**
 User profile displays username and a link to a meditation page which opens in a new window. I created the meditation page in a previous project and thought it would be a useful tool to have on hand in the users profile.
-![profile](static/docs/screenshots/profile.png)
+![profile](docs/screenshots/profile.png)
 #### LOG OUT
 Users can log out easily from the navbar. A flash message appears to confirm the user has been logged out and is redirected to login page.
-![logout](static/docs/screenshots/logout.png)
+![logout](docs/screenshots/logout.png)
 #### 404 PAGE
 If users try to access a page that doesn't exist, they will be directed to a 404 page which I designed.
-![404](static/docs/screenshots/404.png)
+![404](docs/screenshots/404.png)
 #### 500 PAGE
 I designed a 500 page should the site break for whatever reason.
 ![500](static/images/500.png)
@@ -309,8 +309,8 @@ Bootstrap is responsive by default so I will test break points both manually and
 * **Test**
 I have tested on various screen sizes and devices.
 
-![phones](static/docs/screenshots/size1.png)
-![tablets](static/docs/screenshots/size2.png)
+![phones](docs/screenshots/size1.png)
+![tablets](docs/screenshots/size2.png)
 
 
 * **Result**
@@ -338,13 +338,13 @@ CRUD functions for admin working as expected.
 
 ## **Validation Reports**
 
-[HTML Validation](static/docs/wireframes/validations/html-validation.png)
+[HTML Validation](docs/wireframes/validations/html-validation.png)
 
-[CSS Validation](static/docs/wireframes/validations/css-validation.png)
+[CSS Validation](docs/wireframes/validations/css-validation.png)
 
-[JS Validation](static/docs/wireframes/validations/js-validation.png)
+[JS Validation](docs/wireframes/validations/js-validation.png)
 
-[Accessibility](static/docs/wireframes/validations/accessibility-audit.png)
+[Accessibility](docs/wireframes/validations/accessibility-audit.png)
 
 ## **Bugs**
 
