@@ -1,4 +1,4 @@
-//Custom Form Validation Styles
+//Custom Form Validation Styles from Bootstrap example
 
 (function() {
 	'use strict'
