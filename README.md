@@ -383,7 +383,7 @@ Deployed site working as expected.
 
 ## **Deployment**
 
-### Local Deployment
+### Local Development
 
 I have created the Kindergarten Activities project using Github, from there I used [Gitpod](https://gitpod.io/) to write my code. 
 Then I used commits to git followed by "git push" to my GitHub repository. 
