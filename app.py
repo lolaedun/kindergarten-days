@@ -37,7 +37,8 @@ def get_activities():
     """
     now = datetime.now()
     activities = list(mongo.db.activities.find({'month': now.strftime('%B')}))
-    return render_template("pages/activities.html", activities=activities)
+    sorted_activities = sorted(activities, key=lambda d: d['theme'])
+    return render_template("pages/activities.html", activities=sorted_activities)
 
 
 @app.route("/filter", methods=["GET", "POST"])
@@ -47,7 +48,8 @@ def filter_activities():
     """
     month = request.form.get('month')
     activities = list(mongo.db.activities.find({'month': month}))
-    return render_template("pages/activities.html", activities=activities)
+    sorted_activities = sorted(activities, key=lambda d: d['theme'])
+    return render_template("pages/activities.html", activities=sorted_activities)
 
 
 @app.route("/register/user", methods=["GET", "POST"])
