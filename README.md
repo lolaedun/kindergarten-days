@@ -504,4 +504,4 @@ I'm not sure I would have done all this work without the incredible support and 
 
 I thoroughly enjoyed bringing this project to life from a small idea in my head. A big shout out to all the tutors who helped me when my brain felt scrambled, your simple explanations made me see my code from a fresh new perspective.
 
-Thank you also to student services for checking in on me too! It was very much appreciated.
+Thank you also to student services for checking in on me too - special shout out to Aoife! It was very much appreciated.
