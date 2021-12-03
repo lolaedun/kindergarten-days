@@ -381,6 +381,17 @@ Update requirements.txt file
 * **Verdict**    
 Deployed site working as expected.
 
+### **New activities added not showing order**
+
+* **Bug**  
+When an activity is deleted it moves the existing activities to the top of the search and the new ones go to the bottom so it's no longer showing in week order.
+
+* **Fix**       
+add a sort method to the theme
+
+* **Verdict**    
+activities now displaying in theme order for each month.
+
 ## **Deployment**
 
 ### Local Development
